@@ -1,0 +1,1724 @@
+<html lang="en">
+<head>
+  <title>ABC Learning Center</title>
+  <link rel="icon" href="book.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-
+    UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <style>
+
+.card-group{
+width: 100%;
+margin: auto;
+padding:initial;
+}
+
+body {
+  background-color:	#ffffff;
+  font: bold;
+  background-image: url("https://cdn.hipwallpaper.com/i/3/83/dU9ibC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    font-family: 'Abel', serif;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.center-block {float: none !important}
+h1 {
+    margin-top: 4cm;
+    color:#010038;
+    font-weight: normal;
+    transition: .3s;
+}
+p {
+  font-family: 'Abel', serif;
+    font-weight: 400;
+  margin: 0;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+ * {
+	 box-sizing: inherit;
+	 transition-property: all;
+	 transition-duration: 0.6s;
+	 transition-timing-function: ease;
+}
+
+ @media (min-width: 100%) {
+	 .container {
+    max-width: 100%;
+		 flex-direction: row;
+		 justify-content: space-between;
+	}
+ }
+
+
+  #row{
+    margin-top: 3cm;
+    
+  }
+
+  /* helpers/align.css */
+ .align {
+	 align-items: center;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+}
+/* helpers/grid.css */
+ :root {
+	 --gridMaxWidth: 20rem;
+	 --gridWidth: 100%;
+}
+ .grid {
+	 margin-left: auto;
+	 margin-right: auto;
+	 max-width: var(--gridMaxWidth);
+	 width: var(--gridWidth);
+}
+/* layout/base.css */
+ :root {
+	 --htmlFontSize: 100%;
+	 --bodyBackgroundColor: #61646d;
+	 --bodyColor: #000;
+	 --bodyFontFamily: 'Open Sans';
+	 --bodyFontFamilyFallback: sans-serif;
+	 --bodyFontSize: 0.875rem;
+	 --bodyFontWeight: 400;
+	 --bodyLineHeight: 1.5;
+}
+ *, *::before, *::after {
+	 box-sizing: inherit;
+}
+
+/* modules/form.css */
+ ::placeholder {
+	 color: #42454e;
+}
+ input {
+	 appearance: none;
+	 border: none;
+	 font: inherit;
+	 margin: 0;
+	 outline: 0;
+	 padding: 0;
+}
+ input[type="search"] {
+	 appearance: textfield;
+	 box-sizing: content-box;
+}
+ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+	 appearance: none;
+}
+ input[type="submit"] {
+	 cursor: pointer;
+}
+ .form__field {
+	 display: flex;
+	 flex-wrap: wrap;
+}
+ .form__input {
+	 flex-grow: 1;
+}
+/* modules/search.css */
+ :root {
+	 --searchBackgroundColor:#2e279d ;
+	 --searchBorderRadius: 0.125rem;
+	 --searchFontSize: 0.75rem;
+	 --searchPadding: 0.5rem;
+	 --searchInputBorderRadius: 0.125rem;
+	 --searchInputSearchBackgroundColor: #fff;
+	 --searchInputSearchColor: #42454e;
+	 --searchInputSearchPaddingHorizontal: 0.5rem;
+	 --searchInputSearchPaddingVertical: 0.375rem;
+	 --searchInputButtonBackgroundColor:   #BBE1FA;
+	 --searchInputButtonColor: black;
+	 --searchInputButtonFontWeight: bold;
+	 --searchInputButtonPaddingHorizontal: 0.625rem;
+	 --searchInputButtonPaddingVertical: 0.375rem;
+	 --searchInputButtonHoverBackgroundColor: grey;
+}
+ .search {
+	 background-color: var(--searchBackgroundColor);
+	 border-radius: var(--searchBorderRadius);
+	 font-size: var(--searchFontSize);
+	 padding: var(--searchPadding);
+}
+ .search input[type="search"], .search input[type="submit"] {
+	 border-radius: var(--searchInputBorderRadius);
+}
+ .search input[type="search"] {
+	 background-color: var(--searchInputSearchBackgroundColor);
+	 color: var(--searchInputSearchColor);
+	 padding: var(--searchInputSearchPaddingVertical) var(--searchInputSearchPaddingHorizontal);
+}
+ .search input[type="submit"] {
+	 background-color: var(--searchInputButtonBackgroundColor);
+	 color: var(--searchInputButtonColor);
+	 font-weight: var(--searchInputButtonFontWeight);
+	 margin-left: 0.5rem;
+	 padding: var(--searchInputButtonPaddingVertical) var(--searchInputButtonPaddingHorizontal);
+}
+ .search input[type="submit"]:focus, .search input[type="submit"]:hover {
+	 background-color: var(--searchInputButtonHoverBackgroundColor);
+}
+  .navbar-expand-lg{
+    width: 100%;
+  }
+
+ .container {
+   width: 100%;
+	 padding: 0;
+}
+
+ .blocks-menus {
+	 background: white;
+	 padding: 20px 10px;
+	 text-align: center;
+}
+ .blocks-menus .primary-menus {
+	 display: inline-block;
+	 margin: 0;
+	 padding: 0;
+}
+ .blocks-menus .primary-menus i {
+	 padding: 0 10px;
+}
+ .blocks-menus .primary-menus li {
+	 list-style: none;
+	 float: left;
+	 padding: 0 10px;
+}
+ .blocks-menus .primary-menus li a {
+	 text-decoration: none;
+   font-family: 'Abel', serif;
+	 text-transform: uppercase;
+	 font-weight: normal;
+	 color: #303030;
+	 font-size: 14px;
+	 font-weight: 600;
+	 transition: all 0.2s ease-in-out;
+	 -webkit-transition: all 0.2s ease-in-out;
+	 -moz-transition: all 0.2s ease-in-out;
+}
+ .blocks-menus .primary-menus li a:hover {
+	 color: gray;
+}
+ .blocks-menus .menus-dropdown:hover .dropdown {
+	 visibility: visible;
+	 opacity: 1;
+}
+ .blocks-menus .dropdown {
+	 position: absolute;
+	 opacity: 0;
+	 visibility: hidden;
+	 border: 1px solid #ececec;
+	 padding: 10px 30px;
+	 z-index: 999;
+	 background: white;
+	 width: 100%;
+	 margin-top: 10px;
+	 transition: all 0.2s ease-in-out;
+	 -webkit-transition: all 0.2s ease-in-out;
+	 -moz-transition: all 0.2s ease-in-out;
+}
+ .blocks-menus .dropdown li {
+	 line-height: 30px;
+	 float: none;
+}
+ .blocks-menus .dropdown a {
+	 font-size: 11px;
+	 font-weight: normal;
+}
+ .blocks-menus .menus-dropdown {
+	 position: relative;
+}
+ .blocks-menus .menus-megamenus:hover .mega-menus {
+	 opacity: 1;
+	 visibility: visible;
+}
+ .blocks-menus .mega-menus {
+	 opacity: 0;
+	 visibility: hidden;
+	 position: absolute;
+	 left: 0;
+	 right: 0;
+	 margin: 15px auto;
+	 width: 80%;
+	 border: 1px solid #ececec;
+	 padding: 0 15px;
+	 min-height: 330px;
+	 transition: all 0.2s ease-in-out;
+	 -webkit-transition: all 0.2s ease-in-out;
+	 -moz-transition: all 0.2s ease-in-out;
+	 background-size: 100%;
+	 background-repeat: no-repeat;
+}
+ .blocks-menus .mega-menus li {
+	 float: none;
+	 text-align: left;
+	 padding: 0;
+}
+ .blocks-menus .section {
+	 float: left;
+	 margin: 35px 15px;
+}
+ .blocks-menus .section h3 {
+  font-family: 'Abel', serif;
+	 position: relative;
+	 font-size: 16px;
+
+	 text-transform: uppercase;
+	 border-bottom: 1px solid #d6d6d6;
+}
+
+.site-footer
+{
+    margin-top: 1cm;
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer
+{
+  color:#BBE1FA;
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#BBE1FA;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #fff;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+      color: #cb2027;
+      background: #fff;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #3a5876;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: #3a5876;
+      background: #fff;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;  
+      background: #fff;
+}
+
+#photos {
+  opacity: .88;
+}
+
+#photos img {
+  width: 30%;
+  float: left;
+  display: block;
+  margin: 2px;
+}
+
+#photo-gallery{
+  list-style: none;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  max-width: 500px;
+
+}
+
+#overlay {
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#photos {
+  width: 100%;
+}
+
+#photo-gallery {
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+ * {
+	 box-sizing: border-box;
+	 font-weight: normal;
+}
+
+h1,h2,h3,h5,h4{
+  font-family: 'Abel', serif;
+    margin-left: 1cm;
+}
+li{
+  color: white;
+}
+span{
+  color: #26272b;
+}
+.icon{
+  margin-left: 0.5cm;
+  margin-top: 0.3cm;
+  margin-bottom: 0.5cm;
+}
+
+.tours.card-deck {
+	 margin: 0 auto;
+
+}
+ .tours .tour {
+	 min-width: 250px;
+   
+}
+ .tours .tour .tour-image {
+	 width: 100%;
+	 height: auto;
+}
+ .tours .tour .tour-title {
+	 font-weight: 500;
+}
+ .tours .tour .tour-description {
+	 font-weight: 300;
+}
+
+
+
+#main {
+	 width: 100%;
+	 float: left;
+	 overflow-x: hidden;
+}
+ .sub {
+	 width: 100%;
+	 background-color: #ebebeb;
+	 overflow: hidden;
+	 padding: 28px 0 0 20px;
+}
+ .sub a {
+	 display: inline-block;
+	 min-width: 110px;
+	 background-color: #f2f2f2;
+	 cursor: pointer;
+	 border-radius: 3px 3px 0 0;
+	 transition: background-color 0.5s, color 0.5s;
+	 color: #ccc;
+	 padding: 2px 0 0 0;
+	 line-height: 35px;
+	 text-align: center;
+	 text-decoration: none;
+	 text-transform: uppercase;
+}
+ .sub a:hover, .sub a.current {
+	 color: #808080;
+	 background-color: #fff;
+}
+/* Table */
+ table {
+	 border-color: #808080;
+	 line-height: 20px;
+}
+ .sp-table {
+	 width: 98%;
+	 margin: 15px;
+}
+ .sp-table th {
+	 text-align: left;
+	 font-weight: 600;
+}
+ .sp-table thead.stay {
+	 position: fixed;
+	 top: 0;
+	 visibility: hidden;
+}
+ .sp-table th, .sp-table td {
+	 border-bottom: 1px solid #e6e6e6;
+	 padding: 8px 8px;
+}
+/* Striped */
+ .sp-table-striped tbody tr:nth-of-type(odd) td {
+	 background-color: #fafafa;
+}
+/* Hover */
+ .sp-table-hover tbody tr:hover td {
+	 background-color: #ededed;
+}
+ .opacity {
+	 opacity: 0;
+}
+ 
+
+
+.tabs {
+	width: 1000px;
+	margin: 50px auto;
+}
+
+.active_tab {
+	color: blue;
+	border-bottom: 5px solid red;
+}
+
+.tab {
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+/* Styling */
+
+.tab_content {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.tab {
+	text-transform: uppercase;
+	padding: 15px 75px;
+	background: white;
+}
+
+.tab_item {
+	margin-top: 50px;
+	display: block;
+	line-height: 1.8;
+}
+
+
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  background-color: #ffffff;
+}
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+img {
+  height: auto;
+  max-width:;
+  vertical-align: middle;
+}
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card:hover .card__image {
+  filter: contrast(100%);
+}
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+@media (min-width: 40rem) {
+  .card__image::before {
+    padding-top: 66.6%;
+  }
+}
+.card__image--flowers {
+  background-image: url(https://unsplash.it/800/600?image=82);
+}
+.card__image--river {
+  background-image: url(https://unsplash.it/800/600?image=11);
+}
+.card__image--record {
+  background-image: url(https://unsplash.it/800/600?image=39);
+}
+.card__image--fence {
+  background-image: url(https://unsplash.it/800/600?image=59);
+}
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card__text {
+    color: black    ;
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.cardContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+.mmCard {
+  width: 400px;
+  height: 350px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.mmCardVid {
+  width: 100%;
+  display: block;
+  height: auto;
+  max-height: 250px;
+  border-radius: 3px 3px 0px 0px;
+}
+
+iframe.mmCardVid {
+  height: 250px;
+  border: 0;
+}
+
+.mmCard h3 {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.cardActionBar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  border-radius: 0px 0px 3px 3px;
+  padding: 2px;
+  margin: 0;
+}
+
+.cardAction {
+  color: #F63E37;
+  background-color: #F2F1F1;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 100%;
+  border-radius: 3px;
+  height: 100%;
+  width: 30%;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+  user-select: none;
+  padding: 5px 0;
+  margin-left: 2px;
+}
+
+.cardAction:hover {
+  background-color: #E3EBF1;
+  text-decoration: none;
+}
+
+.cardAction:active {
+  color: 333333;
+  animation-name: transition;
+  animation-duration: .5s;
+  background-color: #cccccc;
+  text-decoration: none;
+}
+
+@-webkit-keyframes transition {
+  0% {
+    background-color: #cccccc;
+    color: #333333;
+  }
+  50% {
+    background-color: #7BB9E0;
+    color: #000000;
+  }
+  100% {
+    background-color: #cccccc;
+    color: #333333;
+  }
+}
+
+@keyframes transition {
+  0% {
+    background-color: #cccccc;
+    color: #333333;
+  }
+  50% {
+    background-color: #7BB9E0;
+    color: #000000;
+  }
+  100% {
+    background-color: #cccccc;
+    color: #333333;
+  }
+}
+
+.bBeige {
+  background-color: Beige;
+  color: #333333;
+}
+
+
+.shadow2s, .shadow2a{
+	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, .15), 1px 1px 1px rgba(0, 0, 0, .5);
+	transform: translate3d(0px, 0px, 2px);
+	-webkit-transform: translate3d(0px, 0px, 2px);
+	-moz-transform: translate3d(0px, 0px, 2px);
+	-ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow4s, .shadow4a{
+	box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, .15), 1px 2px 2px rgba(0, 0, 0, .5);
+	transform: translate3d(0px, 0px, 4px);
+	-webkit-transform: translate3d(0px, 0px, 2px);
+	-moz-transform: translate3d(0px, 0px, 2px);
+	-ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow6s, .shadow6a
+.shadow2a:hover {
+	box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, .15), 2px 3px 3px rgba(0, 0, 0, .5);
+	transform: translate3d(0px, 0px, 6px);
+	-webkit-transform: translate3d(0px, 0px, 2px);
+	-moz-transform: translate3d(0px, 0px, 2px);
+	-ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow8s, .shadow8a,
+.shadow4a:hover {
+	box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, .15), 3px 4px 4px rgba(0, 0, 0, .5);
+	transform: translate3d(0px, 0px, 8px);
+	-webkit-transform: translate3d(0px, 0px, 2px);
+	-moz-transform: translate3d(0px, 0px, 2px);
+	-ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow6a:hover,
+.shadow2a:active {
+	box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, .15), 3px 5px 5px rgba(0, 0, 0, .5);
+	transform: translate3d(0px, 0px, 10px);
+	-webkit-transform: translate3d(0px, 0px, 2px);
+	-moz-transform: translate3d(0px, 0px, 2px);
+	-ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow8a:hover,
+.shadow4a:active {
+	box-shadow: 0px 0px 22px 7px rgba(0, 0, 0, .15), 4px 6px 6px rgba(0, 0, 0, .5);
+	transform: translate3d(0px, 0px, 12px);
+	-webkit-transform: translate3d(0px, 0px, 2px);
+	-moz-transform: translate3d(0px, 0px, 2px);
+	-ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow6a:active {
+	box-shadow: 0px 0px 27px 9px rgba(0, 0, 0, .15), 5px 7px 7px rgba(0, 0, 0, .5);
+	transform: translate3d(0px, 0px, 14px);
+	-webkit-transform: translate3d(0px, 0px, 2px);
+	-moz-transform: translate3d(0px, 0px, 2px);
+	-ms-transform: translate3d(0px, 0px, 2px);
+}
+
+.shadow8a:active {
+	box-shadow: 0px 0px 32px 11px rgba(0, 0, 0, .15), 5px 8px 8px rgba(0, 0, 0, .5);
+	transform: translate3d(0px, 0px, 16px);
+	-webkit-transform: translate3d(0px, 0px, 2px);
+	-moz-transform: translate3d(0px, 0px, 2px);
+	-ms-transform: translate3d(0px, 0px, 2px);
+}
+
+
+
+
+main {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.extra-margins {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.card-container {
+	 margin-bottom: 40px;
+}
+ .card-container-header {
+	 margin-bottom: 10px;
+}
+ @media (min-width: 40em) {
+	 .card-container-header {
+		 align-items: center;
+		 display: flex;
+		 justify-content: space-between;
+	}
+}
+ .card-container-title {
+	 margin-bottom: 0;
+}
+ .card-container-actions > a:not(:last-child) {
+	 margin-right: 10px;
+}
+ .card-container-styled > .card-container-body {
+	 background: #eee;
+	 border: 1px solid #ddd;
+	 border-radius: 3px;
+	 box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .1);
+	 padding: 20px 20px 0;
+}
+ .card-group > .card-container-body {
+	 display: flex;
+	 flex-wrap: wrap;
+}
+ .card-columns > .card-container-body {
+	 column-count: 1;
+}
+ @media (min-width: 40em) {
+	 .card-columns > .card-container-body {
+		 column-count: 3;
+	}
+}
+ @media (min-width: 60em) {
+	 .card-columns > .card-container-body {
+		 column-count: 4;
+	}
+}
+ @media (min-width: 80em) {
+	 .card-columns > .card-container-body {
+		 column-count: 5;
+	}
+}
+ .card-columns > .card-container-body > .card {
+	 max-width: 100%;
+}
+ .card {
+	 display: inline-flex;
+	 margin-bottom: 20px;
+	 margin-right: 10px;
+	 max-width: 320px;
+	 position: relative;
+	 vertical-align: top;
+	 width: 100%;
+}
+ .card-back, .card-front {
+	 background: #fff;
+	 border: 1px solid #ddd;
+	 border-radius: 3px;
+	 position: relative;
+	 width: 100%;
+}
+ @media (min-width: 30em) {
+	 .card-back[data-image-position='left'], .card-front[data-image-position='left'], .card-back[data-image-position='right'], .card-front[data-image-position='right'] {
+		 flex-direction: row;
+	}
+}
+ .card-front {
+	 display: flex;
+	 flex-direction: column;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="ABC.png" width="200" class="rounded" alt="logo"  height="80">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav mr-auto">
+            <li style="margin-right: 1cm; font-size: large;" class="nav-item active">
+              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li style="margin-right: 1cm; font-size: large;" class="nav-item dropdown">
+              <a class="nav-link mr-sm-4 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="course1.html">HTML</a>
+                <a class="dropdown-item" href="course2.html">C++</a>
+                <a class="dropdown-item" href="course3.html">Python</a>
+                <a class="dropdown-item" href="course4.html">JavaScript</a>
+            </div>
+            </li>
+            <li style="margin-right: 1cm; font-size: large;" class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li style="margin-right: 1cm; font-size: large;" class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+    
+<div class="tabs">
+	<div class="tab">HTML & CSS</div>
+	<div class="tab">HTML,CSS and JavaScript</div>
+	<div class="tab">HTML/ CSS Bootcamp</div>   
+	
+</div>
+
+<div class="tab_content">
+	<div class="tab_item">
+        
+    
+    <main>
+
+      <!--Main layout-->
+      <div class="container">
+        <!--First row-->
+        <div class="row wow fadeIn" data-wow-delay="0.2s">
+          <div class="col-lg-7">
+            <!--Featured image -->
+            <div class="view overlay hm-white-light z-depth-1-half">
+              <img src="https://designhooks.com/wp-content/uploads/2016/04/html5-and-css3.png" class="img-fluid " alt="">
+              <div class="mask">
+              </div>
+            </div>
+            <br>
+          </div>
+    
+          <!--Main information-->
+          <div class="col-lg-5">
+            <h2 class="h2-responsive">What you'll learn</h2>
+            <hr>
+            <p>
+             -- Learn What is HTML and Have your first look at HTML<br>
+              -- Learn how to declare your HTML document using !DOCTYPE Declaration<br>
+              -- Learn How HTML is Structured and have a closer look to elements<br>
+              -- Install your editor to start Building your web pages using Brackets Editor<br>
+              -- Build your first Web Page using Brackets Editor<br>
+              -- Know the difference between Head and Body Tags<br>
+              -- Learn How to use Comments<br><br>
+              -- Learn How to add Images to your Web Page<br>
+              -- Know How and When to Use HTML Tables<br>
+              -- Learn How To Style Your Web Page Using CSS or Cascading Style Sheets<br>
+              -- Know CSS Syntax and Start writing your first CSS Code<br>
+              -- Learn The difference between Classes and IDs and when to use them<br><br>
+              <a href="https://wtf.tw/ref/duckett.pdf">What is HTML</a>
+            </p>
+            <a href="contact.html" class="btn btn-info">Contact</a>
+            
+          </div>
+        </div>
+
+
+
+        
+        <!--/.First row-->
+    
+        <hr class="extra-margins">
+    
+      </div>
+      <!--/.Main layout-->
+      <!-- Basic card container -->
+  <div  class="card-container">
+    <div class="card-container-body">
+      <div  class="card">
+        <div class="card-front">
+          <div  style="margin-bottom: 1cm; margin-top: 1cm; margin-left: 1cm; margin-right: 1cm;" class="card-content">
+            <h3>What is HTML 1</h3>
+            <p>
+              You can watch it on youtube.
+            </p>
+          </div>
+          <div  style="margin-left: 1cm; margin-right: 1cm;" class="card-actions">
+            <a href="https://www.youtube.com/watch?v=-USAeFpVf_A&list=PLr6-GrHUlVf_ZNmuQSXdS197Oyr1L9sPB">Youtube Video</a> &nbsp; &nbsp;
+          </div>
+          
+        </div>
+      </div>
+
+      <div  class="card">
+        <div class="card-front">
+          <div  style="margin-bottom: 1cm; margin-top: 1cm; margin-left: 1cm; margin-right: 1cm;" class="card-content">
+            <h3>What is HTML 1</h3>
+            <p>
+              You can watch it on youtube.
+            </p>
+          </div>
+          <div  style="margin-left: 1cm; margin-right: 1cm;" class="card-actions">
+            <a href="https://www.youtube.com/watch?v=i3GE-toQg-o&list=PLr6-GrHUlVf_ZNmuQSXdS197Oyr1L9sPB&index=3">Youtube Video</a> &nbsp; &nbsp;
+          </div>
+          
+        </div>
+      </div>
+
+      <div  class="card">
+        <div class="card-front">
+          <div  style="margin-bottom: 1cm; margin-top: 1cm; margin-left: 1cm; margin-right: 1cm;" class="card-content">
+            <h3>What is HTML 1</h3>
+            <p>
+              You can watch it on youtube.
+            </p>
+          </div>
+          <div  style="margin-left: 1cm; margin-right: 1cm;" class="card-actions">
+            <a href=" https://www.youtube.com/watch?v=09oErCBjVns&list=PLr6-GrHUlVf_ZNmuQSXdS197Oyr1L9sPB&index=4">Youtube Video</a> &nbsp; &nbsp;
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- End basic card container -->
+    </main>
+    
+
+    </div>
+	
+	<div class="tab_item">
+        
+    <main>
+
+      <!--Main layout-->
+      <div class="container">
+        <!--First row-->
+        <div class="row wow fadeIn" data-wow-delay="0.2s">
+          <div class="col-lg-7">
+            <!--Featured image -->
+            <div class="view overlay hm-white-light z-depth-1-half">
+              <img src="https://udemy-images.udemy.com/course/750x422/673420_5279_3.jpg " class="img-fluid " alt="">
+              <div class="mask">
+              </div>
+            </div>
+            <br>
+          </div>
+    
+          <!--Main information-->
+          <div class="col-lg-5">
+            <h2 class="h2-responsive">What you'll learn</h2>
+            <hr>
+            <p>
+             -- Develop your own website
+          
+             -- Complete knowledge starting from the basics in html and css to advanced topics in html5 and css3<br>
+              --  Design beautiful website using html and css<br>
+              -- Bag strong basic fundamental knowledge from html to html5<br>
+
+              --  Have a good knowledge on CSS3<br><br>
+              -- Learn How to add Images to your Web Page<br>
+           
+              -- Learn The difference between Classes and IDs and when to use them<br><br>
+              <a href="http://www.nematrian.com/Pages/HTMLCSSJSCombined.pdf">What is HTML/CSS and JavaScript</a>
+            </p>
+            <a href="contact.html" class="btn btn-info">Contact</a>
+            
+          </div>
+        </div>
+
+
+
+        
+        <!--/.First row-->
+    
+        <hr class="extra-margins">
+    
+      </div>
+      <!--/.Main layout-->
+      <!-- Basic card container -->
+  <div  class="card-container">
+    <div class="card-container-body">
+      <div  class="card">
+        <div class="card-front">
+          <div  style="margin-bottom: 1cm; margin-top: 1cm; margin-left: 1cm; margin-right: 1cm;" class="card-content">
+            <h3>Build a website with HTML & CSS</h3>
+            <p>
+              You can watch it on youtube.
+            </p>
+          </div>
+          <div  style="margin-left: 1cm; margin-right: 1cm;" class="card-actions">
+            <a href="https://www.youtube.com/watch?v=5bMdjkfvONE">You tube Video</a> &nbsp; &nbsp;
+          </div>
+          
+        </div>
+      </div>
+
+      <div  class="card">
+        <div class="card-front">
+          <div  style="margin-bottom: 1cm; margin-top: 1cm; margin-left: 1cm; margin-right: 1cm;" class="card-content">
+            <h3>HTML Crash Course Beginners</h3>
+            <p>
+              You can watch it on you tube.
+            </p>
+          </div>
+          <div  style="margin-left: 1cm; margin-right: 1cm;" class="card-actions">
+            <a href="https://www.youtube.com/watch?v=UB1O30fR-EE&t=1448s">Youtube Video</a> &nbsp; &nbsp;
+          </div>
+          
+        </div>
+      </div>
+
+      <div  class="card">
+        <div class="card-front">
+          <div  style="margin-bottom: 1cm; margin-top: 1cm; margin-left: 1cm; margin-right: 1cm;" class="card-content">
+            <h3>JavaScript Tutorial for Beginners</h3>
+            <p>
+              You can watch it on youtube.
+            </p>
+          </div>
+          <div  style="margin-left: 1cm; margin-right: 1cm;" class="card-actions">
+            <a href="https://www.youtube.com/watch?v=W6NZfCO5SIk">Youtube Video</a> &nbsp; &nbsp;
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- End basic card container -->
+    </main>
+  </div>
+	
+	<div class="tab_item">
+        
+    <main>
+
+      <!--Main layout-->
+      <div class="container">
+        <!--First row-->
+        <div class="row wow fadeIn" data-wow-delay="0.2s">
+          <div class="col-lg-7">
+            <!--Featured image -->
+            <div class="view overlay hm-white-light z-depth-1-half">
+              <img src="https://i.ytimg.com/vi/-2LtZRi6Q0s/maxresdefault.jpg" class="img-fluid " alt="">
+              <div class="mask">
+              </div>
+            </div>
+            <br>
+          </div>
+    
+          <!--Main information-->
+          <div class="col-lg-5">
+            <h2 class="h2-responsive">What you'll learn</h2>
+            <hr>
+            <p>
+             -- Build websites using HTML and CSS<br>
+             --  Use Flexbox to easily align content on the page<br>
+              --  Work with CSS Grid to build a website's layout<br>
+              --  Create responsive websites that render custom layouts for smartphones, tablets and desktops<br>
+              --  Work with images <br>
+              --  Integrate custom fonts<br><br>
+              --  Using CSS based animations<br>
+              --  Build real world projects<br>
+              -- Create HTML forms for getting user input<br><br>
+              <a href="http://documents.worldbank.org/curated/en/795011502799283894/pdf/118627-WP-PUBLIC-P163475-78p-CodingBootcampsFutureProofSkills.pdf">What is HTML/CSS Bootcamp</a>
+            </p>
+            <a href="contact.html" class="btn btn-info">Contact</a>
+            
+          </div>
+        </div>
+
+
+
+        
+        <!--/.First row-->
+    
+        <hr class="extra-margins">
+    
+      </div>
+      <!--/.Main layout-->
+      <!-- Basic card container -->
+  <div  class="card-container">
+    <div class="card-container-body">
+      <div  class="card">
+        <div class="card-front">
+          <div  style="margin-bottom: 1cm; margin-top: 1cm; margin-left: 1cm; margin-right: 1cm;" class="card-content">
+            <h3>Mini Bootcamp Lesson 1</h3>
+            <p>
+              You can watch it on youtube.
+            </p>
+          </div>
+          <div  style="margin-left: 1cm; margin-right: 1cm;" class="card-actions">
+            <a href="https://www.youtube.com/watch?v=nLs9I8MRbO0">Youtube Video</a> &nbsp; &nbsp;
+          </div>
+          
+        </div>
+      </div>
+
+      <div  class="card">
+        <div class="card-front">
+          <div  style="margin-bottom: 1cm; margin-top: 1cm; margin-left: 1cm; margin-right: 1cm;" class="card-content">
+            <h3>CSS Tutorial</h3>
+            <p>
+              You can watch it on youtube.
+            </p>
+          </div>
+          <div  style="margin-left: 1cm; margin-right: 1cm;" class="card-actions">
+            <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc">Youtube Video</a> &nbsp; &nbsp;
+          </div>
+          
+        </div>
+      </div>
+
+      <div  class="card">
+        <div class="card-front">
+          <div  style="margin-bottom: 1cm; margin-top: 1cm; margin-left: 1cm; margin-right: 1cm;" class="card-content">
+            <h3>Website Design In HTML And CSS</h3>
+            <p>
+              You can watch it on youtube.
+            </p>
+          </div>
+          <div  style="margin-left: 1cm; margin-right: 1cm;" class="card-actions">
+            <a href="https://www.youtube.com/watch?v=-2LtZRi6Q0s">Youtube Video</a> &nbsp; &nbsp;
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- End basic card container -->
+    </main>
+  </div>
+	
+	
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ 
+
+
+                  <!-- Site footer -->
+              <footer class="site-footer">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-6">
+             
+                          <p class="text-justify">Email<br> 
+                               <i>hsuyeehtet351@gmail.com </i> <hr>
+                               Call Directly<br>
+                               <i>(+95)9894904577</i> <hr>
+                               Address<br>
+                               <i>631/ 5E, Pyay Road, Kamayut Township, Junction of Pyay Road & Inya Road </i> 
+                              </p>
+                        </div>
+              
+                        <div class="col-xs-6 col-md-3">
+                          <h6> Quick Links</h6>
+                          <ul class="footer-links">
+                            <li><a href=".html">Terms & Conditions</a></li>
+                            <li><a href="Privacy policy.html">Privacy-policy</a></li>
+                            <li><a href=".html">View Courses</a></li>
+                            <li><a href="Sitemap.html">Sitemap</a></li>
+                            <li><a href=".html">Success Stories</a></li>
+                          </ul>
+                        </div>
+              
+                        <div class="col-xs-6 col-md-3">
+                          <h6>Recommended Courses</h6>
+            
+                          <div id="photos">
+                            <ul id="photo-gallery">
+                              <li>
+                                
+                                <a href="#">
+                                  <img height="46" src="https://happycoding.io/tutorials/html/images/html-3.png">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46" src="https://img.favpng.com/25/3/3/css3-cascading-style-sheets-logo-html-png-favpng-smuBT0aP7P89Uste6DbQnA8sx.jpg"></a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46" src="https://images7.alphacoders.com/486/thumb-350-486291.jpg">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46" src="https://images7.alphacoders.com/679/thumb-1920-679140.png">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46" src="https://wallpapercave.com/wp/wp1828904.png">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAU8AAACWCAMAAABpVfqTAAAAxlBMVEUeLjv///8hrOIhsuoeKzcAEiYeKDMaKzgeKjUAHC0WKDYhr+YeJjAhtOweIywIIDAAGCoACyLY2tyPlJkwP0rv7/AAFSgPJDMeHydPWmLP0dMgeJ0gfqUfYX8eNkUfVnAfSmDm5+kfaYkeNUR4foSnq64fUmshn9Egh7EePU8glsUAAB4gi7afo6dianItO0dudny+wcS1uLseRVqAhoxCTVeSl5wfZoYeGR4eEhVVXmZGUFrGycsfXXlnb3YAABkAABAeCgkHpdowAAARJUlEQVR4nO1cC3uiuhalCSLKQ22rMgV8YCtC7dO29uXMOf//T90kgOxAUKueOz1zsr5vpooYcWXvtR8hKoqEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhKLUm81+v99s1n/3hfwBaDZqtfP3n/eX9z/f7zq1RvN3X9C/Gc126+fV6UmO05uPXut3X9W/Fc3Ox8NJCeOzmmR0H9R+XJTZZHiqSSX9Kpq9xwo2CS5a305G6w2A/u++mhIaH91qOk9OunffjNDm+RXA0zEJHamHj9G+38QmJXTyrVy+3uCm/+fxZtv2jjBI+3ILnSQs1Y7wOUdDhwucNwdfmzrIHoxC+9DBlMY266S46h38OUdDi5v/01+HjqcuMie349nBfDafd6Dz5OT5MKciJVer1SJl1+HCUW/C6+oqB49oz8zsIf4in81aO0MjvbpWORR1u+Vjn7lX9ToZOI7rtexwm//QfqPT/7i9PCO4vD2v1VoFBvq1CvSEobvDJXbvBwcj23VTPtWpNf8Sn82P/EIeEkI7hST+9OWH0mo36h8vY/6Fu4yF5mk3wwcgtP48zg5/AkJJ0XX/yA11caa0IaP921MxLj6v7lulaqLxBAe7OViH1IWVubu2xF/Tz8ZVfiWPjeTLcKSN369bzCXrzcb1GffSTWrQfSC3kE8w9unaluu1Z1Fi+9gHVlWrKiQYzjr8V6jfcXNz/ZWvn0ONouyhE1vZQy0wrOgr+VINVOdJ1tbhTOfqGnpPj+M6C/GNm/wYPBvQcpVSr/SVqjLhPbe7xsbctxgJO7DB0O3vKZ6mp6WP1BFGmXzqK2x4XzHQNriWc3opLd55CrZQu4KvpsIPeDuFmUo7p+Uy5ZmfEB4/srmon2+kk1APVbrBOc2+4unMgoxP2zNQRqG6wAhNdjfQ5g9wLcxTetA2HoqZBx9J0+8FeHtsgHMBLfWUeV4weHSzSN/flv0+QDXmkpGXQuDbFaa/dnHFDo21fZInyJg7O4/TAl/wolf8Lt1GyXlqn+D1RCAgb7DQ6+eW3k1ErbeJzlwUGlcbT1sPx3A9Bi9cFNxpV6gRjnPSLIT17LHpGsjyd/b4NojlLLxwYnRfdh44AScvTPIAbyfPYALauVJ+MsVrbXB2hlQsoKaLsc4slB7QbtH87wY7xl5mklQ+8SJ3cYSQMdyV0A7w7tt+wXvGglDJ2W8S4BsgwsB3gMDGiOfjsAhp2d3bdt7JUxa7YLoHFPiLoFFnLZ/aCqP8mWIGREEN3+E1dCIeqK6Aq6HRhXM1UZemCW0s4ROYEwxH9Xp+4i0lqgOlQohkPE7TxVgLKJeMnO0pnooTIjzMGNQpnyCJd+aEUGs+sdeM6oqvF4dI0c97XMy5uWjUEL0BlvaJvzfyA1fgLc33/DidKvicKN3T5Nf1deedy54SmqCkdMXIwh6XbnzumXkq+ogo5jSjSx8S/hB42YyphSIvsm1T0zXTmcbVY/E9WM59HkSFBhTLRF+hOV0Ci269rA+PaZiAqti97SQlZrMD7f2CmTfQ9HFHXHZmhQScor3FkyVIeN3lJLEJIRyY+evOjDJs4HDm+qulFxrVGX57XXj3ChwIo1FBEFj0geYEw1Evd29qd5D27l0+dAcMmMhFbbw+AO2dVFY5ksSCy/s/9m7PkJwI2KdiGoS9EOZIzgpRRpFhYIyteFLl7Ur/c5zhlPouF1mFjR9YCnbZtwXm1IUWfZ1/WSrEPZBJ3IKZgoLM+IQpLrT3+jMo5NkIHSgWTyJ12gnqhBCIc0m0Y6NgoIqmBaGFDcKnFfp2pXXC79Kl2gUj66mwKQvEMnVPEBIuYDgCoY529sAbuRIbSgxLq+BFwUUALj2gF8c1GvYWT9pDovqY80dTToIBR5vmTIbLIBhOHK08wpockLzR78KFjEfRhHNnbAxHMLFq809/Xvdy/AIBjn0kuKguRxLQgZOTDrFj4O3d9v49T21J+czbnGpE+TTiQlWk6hrBxpGg89JchUvWhWtacAaShjI0J6i4heYSLBzGFxBgQJYv9fIjn1xE5KT7o8m1FQ/pbWtBQTAd6vAIe7uXmSmuwRVRRYKZ+ckP0SXCfC+xnhZg+A4YCZBiara9zS2jBEwua/mZN1yrk/ONsw5M3PYXT4Vm7Mwe866HPmLRBwcbCBVpKJcd0Y4FF45EjS+uHZIIAgjjXDjqczTttoRCrawOzrzlXQSq+wNsjD3sWbYnSOwT+7kv23OmoNh9rXzPUEAozCVZitgbg4sUCTyXfbKiB5oTjGBwrs7rvJJUgl4DFNrCQhCYupMumPrx3plnwo3P0ktuXQMx4JkpjuXOXFRwQk17pOG9Bb5bVzTnMOlhCQHXXIIRDBBIdaEtuBGqBDYfQCXHhUvgZhPg/LCFQRbfCXnAh2kNzxLOcCHohKh27Jrlw1zApNGH82YhnzCBTopDWH/CCAYIpH1AvulfAZYeAM15KNTjFQ2Vg8ST0jNIknUXUGe7VkIo9pRCvqk6i1C4psQ1Q5h0wQNdgb9znYpE3GDAh0EWEEiiCjdyJVh7qZM/PyuuvHEZU4bHg8STwgwT94bHHDexUFa4O2aW7KumE5HqU9ixh6bVZQ21CbxOwaxD8tLgAzUNZvPA1AnxO7SMTtKuCdDdUgUpajQXRWEPpOGHM1DFCRILZYW7O1UcCnsUxKRMGgkLzkaxcoYdtsIiTQLYbE5zd2CH8Js1f3I0QeV7OBPjhRk8DFyl9hvfokpwoHhSsISeKihXEtlDZGSMkrodhQQGrTnRQpzV10rs9OGFXpUMlOM7NR6QwsLsG1gyXQWFhn1Za4nBBgS6Kyh4gRhkox0ongxqGn34kkibzK2M0cTzGemV7RCYziWVTRsm3eUSDqYymTGCNBDyCSovGlVgoXC5sYkO7F1Q8PaKLenDxZMidXiScHJxRnWmMccodf1ip34NTtOSTI9fuHksLm7CpCeNFTDQwG4ISATomaVlqirAEC4oeIsZ0xHEk0KfpsEHT/k8SLdHM0R9nAGj+cqurOC5NngSzAt6/9jhE2WQumcLwFwKk58Ns1Jat0I+u782ZN+wZyRoaBYzpiOIJ4MTZmYYFZxZtbXp0vVms5m7HGl2ZeeT/47p7UUwirCv/vLcyfELfNeHv5KOPpcIff5q9BP0gDJ0Cp918tmqtfrNIhKSodCK+oV8Hnt/rI0R2tDKNDIqGaCqmaZN1zo239YAk7mX9MIEK4tg1QYcHT8SnPULEaJ79XSfIB+7WPSw2Xi5f/9RALs5BTaXhP3XNuzYHFa2c0haShWEliFgtg6Lyyw32nonAQcauTvb+kYsTaiqFAES+kBTv5xfKAVD33+Fo0xQtM6N0HTrYru+iErHuO52trSxfYm8SFUp4hbBwvkO7SVWXELdFeYBUMK7x7zjnC2zp0EpqArhKfRoVi7fYd/ydO04XL94G2gCvrVxlCzRba/fWcIAM7JzUb8Qzotw/XVvOPN1ZkRSTFG7I4O5KKyFMEDDeswrkeut97rkoLOwrTJPy9LtDs/a1yBP7QpX/+EwR90UQ6v4NaEGCirzItXxrUBAN/QccGX1/nhXOpN8c4tFX6RG1Nk2TywiVtxqskYbqsvdQV3PMlETlOfuOFw5ot6nakdzq7iyRMHdYwldq9nf1ULT1Qhh0yc/KbspX9kcuJJ7c0HBKwxH1/+UfDKuBoBQwqg7cPgUSTWdxQzjUJSEQqXiW531a3hTwwakC0z15iZC1zurmsrGeWKSA5tLonDEhbVid/RwqJOQq9eNOFhoJPFksG1t5IakVhKJJ58ZXRSEvXG3Yetmjuz71Nsbsqx8FapeO9tgok/F5pLIm7evvx4GVY8x4hjFKJx7LoE3D0nhWZ2fQj0rVdT1Rq+wA0MAYB8N5exCzNUpnKpW7/KzilKWS4LbfS5E3tyA2eeR5TOB4xpcA4SRmiBVAeHKJn/f/K1gpvuNWuvu/f7y6ZKBFT0/KW4Z3m+5G9XrrV67eXdeRmHkfq99fn928/iQ4ZHh6ipds+gr6fvuKirJ52zg5/o/s3/UXoQYVcHAXsXNNtyug6r9ZPVmvwx2jBbc5dMFEAzabzUa7XwPGb/BesMbi5+xnZu9QPIhJGbUwOGoakUeBuUjNb3+GGhmEOKi11M2V5V3gnE7yoSZyX8amjNN256pgJIkyRs5lc26FrfBR7BQ9J+HapujpTeP6aJRPHf9yK6wTaJdPX5TVffoedyfAVUjOSdb1LRNvcrR24+FRiZXvEt8Fa2TEoT30UnshGZ5R9XpUaK7KerH6Ka5Yb2Fe/uO5303CJpBt8cwT9MNl5paaMhovuuudiJqsuN53w7ljeXCuu7LmFiWZy9c/pd1TIStYIfFGEVb7nbe90N5vW2Pn/0xTfqPEED+aRpxakW3A1d5nVsjmza11l4+ZLt6NHYu837a/qKrhbANRg47c/p7CHp6nkLHIGepZCR2XjqARhxAU5IPOMIvIh0D5duyRKX7Fqiuq+iuG2iqu7SDYOG6+tAN/IWLDPKKGbmeN0z61zpGqq4uPS9QCQsr8p6Rog0Cl6Rza0Jsn5yOEEn4hq4XJM0GdeSOfG+6cL2RrujKksiGqZhBMHLJQPbU9dziKvlvQqvY2bz9emmkLizLXlk4dHxr9so2OAWxhWeuhQwLv/nYsrC1pIakT63YiZBFEDuTkP5FztCgf9frWfaMnm6EjhqTBzi5ZdB0yaB0r49hTMwpoi/MbJOcRwYmXkCeb9ih9v9Ej5fPz6ouziboQ2y8xQYK32JruMAhqXXdRYyDaG7Eq8XAMIJRnNw7bbqW9xbj+dQ1rLc5jn3fH5rI8MjfbDs03XvqBnPsEZpiP0h3VdHd065heC7RCwVhz58Zhj1lHxX4VrgiOvI99Bbw2b24ed7rVxLp3dEKnqNQweFrYM3+nmH/LcQLIoK+bbs4nvpzzPi0yZHIQlOfcPM3EYPhKKI7T1fTxbrDTZgLHMKlP7CQbZIHzLBtZCmvyBi8hlbkEq5NDWGbTM7fczwis7dahnDzwO9Eu9Op1WiTrNap7XkTvzq1wsAaGnFgBa8zEphtR1OI/diEU9WOiZcSsNvLbYQngcH8O3yjbo8tf2qxv9lgjoEj1UFWRCbGpr8rQ3dRqsTqnQFGzsBA9JCuRjh8o1zbjmIw/bAW38LfjwHCZxyGAzwPEeWQpkj0kKNY6NV0EB5OBgP242/0lotXD88U8nygOUq0IC869iRaYmQ67JYBdYAN25lg9OYRM7Sj5HdlNN+aOysy5BTHb6G1sF+Jbb6GhHkSqSw0IR8QqVX9iX8d1BEmMkZMyHBtFbNdZYQAzx5h5LmvoRF6JJ6b7EQrfvUMNCMHFJIFuEQFTZLiu0RSlTBkFjaxjHgWG/GrS97toWRh2/aswAks11lSGo3QnWNjMGC/K0WCoTEn402VEB3jZyS/AUjUxoZC/sMDbWh5aeDxzYi4MRFUGu8t9lscum+5doSo/4fEwmh0n74m0V4LcOKxxJ1JUCfnTRB5H05+6cgOSSLrWSuHDGv7dDw0tf1EQ8w5c/fR0rL+ED6VwXA41eh/RNdWLG9RF6uJoi8C8r8Z+cvhgGWH9FWSPQ6DVUTy99EyWOm6MpiSNJK4aoiSDFJfLaPJMFJVdRX4g+RGLHU4JMa9mrBhzWgZDHWdPE5+QdIeLX2SxU6C6feISEeATngh/1HhTPuCKiVHZZtvVV3LmoXsqJI+V9O9ueSvSu++yjZE0afsBG39PvbG7B99g74eLH++5WbM/xq2bHyWkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQ+CPxP8ISgAcryJobAAAAAElFTkSuQmCC">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-8 col-sm-6 col-xs-12">
+                        </div>
+              
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div id="social"><a class="facebookBtn smGlobalBtn" href="https://web.facebook.com/?_rdc=1&_rdr" ></a>
+                              <a class="twitterBtn smGlobalBtn" href="https://twitter.com/login" ></a>
+                              <a class="googleplusBtn smGlobalBtn" href="https://google.com" ></a>
+                              <a class="linkedinBtn smGlobalBtn" href="https://linkedin.com" ></a>
+                              <a class="pinterestBtn smGlobalBtn" href="https://pinterest.com" ></a>
+                              <a class="tumblrBtn smGlobalBtn" href="https://tumblr.com" ></a>
+                          </div>
+                      
+                      </div>
+                      </div>
+                    </div>
+              </footer>
+
+
+
+<script nonce="RWC6rAC2I95bEh0VybFqnw==">
+    //<![CDATA[
+          //function to fix height of iframe!
+          var calcHeight = function() {
+            var headerDimensions = $('.preview__header').height();
+            $('.full-screen-preview__frame').height($(window).height() - headerDimensions);
+          }
+    
+          $(document).ready(function() {
+            calcHeight();
+          });
+    
+          $(window).resize(function() {
+            calcHeight();
+          }).load(function() {
+            calcHeight();
+          });
+    
+    //]]>
+
+    $(document).ready(function() {
+
+$.get("http://ipinfo.io", function(response) {
+  var cor = response.loc.split(',');
+  var lat = cor[0];
+  var lon = cor[1];
+  var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=metric" + "&APPID=3695e5e886e4a1b016cf201000ec807e";
+
+  $.getJSON(weatherUrl, function(result) {
+    $("#temp").text(Math.round( result.main.temp * 10) / 10 + " C");
+    $('#weathericon').prepend('<img src="http://openweathermap.org/img/w/' + result.weather[0].icon + '.png" alt="weather icon class="img-responsive" />');
+
+    switch (result.weather[0].main) {
+      case 'Clear':
+        $("body").css("background-image", 'url("http://www.dream-wallpaper.com/free-wallpaper/nature-wallpaper/clear-water-and-blue-sky-2-wallpaper/1920x1200/free-wallpaper-15.jpg")');
+        break;
+      case 'Clouds':
+        $("body").css("background-image", 'url("http://wallpaper-download.net/wallpapers/random-wallpapers-clouds-background-wallpaper-34665.jpg")');
+        break;
+      case 'Rain':
+        $("body").css("background-image",  'url("http://4hdwallpapers.com/wp-content/uploads/2013/04/Rain-Background-1024x640.jpg")');
+        break;
+      case 'Snow': 
+         $("body").css("background-image",  'url("http://7-themes.com/data_images/out/53/6951192-snow-background-1658.jpg")');
+        break;
+      case 'Extreme':
+        $("body").css("background-image",  'url("http://images.fanpop.com/images/image_uploads/severe-weather-weather-250420_1024_768.jpg")');
+        break;
+      case 'Mist':
+        $("body").css("background-image",  'url("http://wallpaperswell.com/wallpapers/2013/08/Beautiful-Early-Morning-Mist.jpg")');
+        break;
+      default:
+        $("body").css("background-image",  'url("http://www.wallpapers9hd.com/wp-content/uploads/2015/05/hd_nature_background_wallpapers_5.jpg")');
+    }
+    
+    $("#toggle").click(function(){
+  $('#temp').toggleClass('fahrenheit');
+  if($('#temp').is(".fahrenheit")){
+    $('#temp').text(CToF(result.main.temp) + " F");
+  }
+  else{
+    $('#temp').text(Math.round( result.main.temp * 10) / 10 + " C");
+  }
+});
+    
+  });
+  
+
+}, "jsonp");
+
+function CToF(celcius) {
+celcius = celcius * 1.8 + 32
+return Math.round( celcius * 10) / 10;
+}
+
+});
+
+$(document).ready( function() {
+  $('.sub > a').click( function() {
+    $('.sub').find('.current').removeClass('current');
+    $(this).addClass('current');    
+  });
+  $('aside > a').click( function() {
+    $('aside').find('.current').removeClass('current');
+    $(this).addClass('current');    
+  });
+  $('.ntfy i').click( function() {
+    $(this).parent().toggleClass('gt').toggleClass('active');
+  });
+  
+  var x = $('aside').width();
+  var margin = '50px 0 0 '+ x +'px';
+  var width = $(window).width() - x;
+  $('#main').css({
+    margin: margin,
+    width: width
+  });
+  
+  $(window).resize(function() {
+    var x = $('aside').width();
+    var margin = '50px 0 0 '+ x +'px';
+    var width = $(window).width() - x;
+    $('#main').css({
+      margin: margin,
+      width: width
+    });
+  });  
+});
+
+
+
+$(document).ready(function() {
+	
+    $(".tab_item").not(":first").hide();
+		// you can use .hover insted of .click if u want
+		$(".tab").click(function() {			$(".tab").removeClass("active_tab").eq($(this).index()).addClass("active_tab");
+	$(".tab_item").hide().eq($(this).index()).fadeIn(1200)
+}).eq(0).addClass("active_tab");
+
+	
+});
+
+
+$(document).ready(function () {
+        $(".arrow-right").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "+=336"
+            }, 750);
+        });
+        $(".arrow-left").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "-=336"
+            }, 750);
+        });
+    });
+    
+    new WOW().init();
+    </script>
+
+    
+
+
+</body>
+
+</html>

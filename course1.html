@@ -1,0 +1,2989 @@
+<html lang="en">
+<head>
+  <title>ABC Learning Center</title>
+  <link rel="icon" href="book.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-
+    UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <style>
+
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    font-family: 'Abel', serif;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.center-block {float: none !important}
+h1 {
+    margin-top: 4cm;
+    color:#010038;
+    font-weight: normal;
+    transition: .3s;
+}
+p {
+  font-family: 'Abel', serif;
+    font-weight: 400;
+  margin: 0;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+ * {
+	 box-sizing: inherit;
+	 transition-property: all;
+	 transition-duration: 0.6s;
+	 transition-timing-function: ease;
+}
+
+ @media (min-width: 100%) {
+	 .container {
+    max-width: 100%;
+		 flex-direction: row;
+		 justify-content: space-between;
+	}
+ }
+
+
+  #row{
+    margin-top: 3cm;
+    
+  }
+
+  /* helpers/align.css */
+ .align {
+	 align-items: center;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+}
+/* helpers/grid.css */
+ :root {
+	 --gridMaxWidth: 20rem;
+	 --gridWidth: 100%;
+ }
+
+.site-footer
+{
+    margin-top: 1cm;
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer
+{
+  color:#BBE1FA;
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#BBE1FA;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #fff;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+      color: #cb2027;
+      background: #fff;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #3a5876;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: #3a5876;
+      background: #fff;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;  
+      background: #fff;
+}
+
+#photos {
+  opacity: .88;
+}
+
+#photos img {
+  width: 30%;
+  float: left;
+  display: block;
+  margin: 2px;
+}
+
+#photo-gallery{
+  list-style: none;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  max-width: 500px;
+
+}
+
+#overlay {
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#photos {
+  width: 100%;
+}
+
+#photo-gallery {
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+ * {
+	 box-sizing: border-box;
+	 font-weight: normal;
+}
+
+h1,h2,h3,h5,h4{
+  font-family: 'Abel', serif;
+    margin-left: 1cm;
+}
+li{
+  color: white;
+}
+span{
+  color: #26272b;
+}
+.icon{
+  margin-left: 0.5cm;
+  margin-top: 0.3cm;
+  margin-bottom: 0.5cm;
+}
+
+.tours.card-deck {
+	 margin: 0 auto;
+
+}
+ .tours .tour {
+	 min-width: 250px;
+   
+}
+ .tours .tour .tour-image {
+	 width: 100%;
+	 height: auto;
+}
+ .tours .tour .tour-title {
+	 font-weight: 500;
+}
+ .tours .tour .tour-description {
+	 font-weight: 300;
+}
+
+.card {
+	 perspective: 1500px;
+	 -moz-perspective: 1500px;
+	 position: relative;
+	 height: 520px;
+}
+ .card-side {
+	 height: 520px;
+	 transition: all 0.8s ease;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 backface-visibility: hidden;
+	 border-radius: 3px;
+	 overflow: hidden;
+	 box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
+}
+ .card-side-front {
+	 background-color: #0C1839 ;
+}
+ .card-side-back {
+	 transform: rotateY(180deg);
+}
+ .card-side-back-1 {
+	 background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+ .card-side-back-2 {
+	 background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+ .card-side-back-3 {
+	 background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+ .card:hover .card-side-front {
+	 transform: rotateY(-180deg);
+}
+ .card:hover .card-side-back {
+	 transform: rotateY(0);
+}
+ .card-picture {
+	 background-size: cover;
+	 height: 230px;
+	 background-blend-mode: screen;
+	 -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+	 clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+	 border-top-left-radius: 3px;
+	 border-top-right-radius: 3px;
+}
+ .card-picture-1 {
+	 background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(https://picsum.photos/400/250?image=1050);
+}
+ .card-picture-2 {
+	 background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(https://picsum.photos/400/250?image=1063);
+}
+ .card-picture-3 {
+	 background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(https://picsum.photos/400/250?image=1061);
+}
+ .card-heading {
+	 font-size: 28px;
+	 font-weight: 300;
+	 text-transform: uppercase;
+	 text-align: right;
+	 color: black;
+	 position: absolute;
+	 top: 120px;
+	 right: 20px;
+	 width: 75%;
+	 line-height: 1.7;
+}
+ .card-heading-span {
+	 padding: 1rem 15px;
+	 -webkit-box-decoration-break: clone;
+	 box-decoration-break: clone;
+}
+ .card-heading-span-1 {
+	 background-image: linear-gradient(to right bottom, rgba(255, 185, 0, .85), rgba(255, 119, 48, .85));
+}
+ .card-heading-span-2 {
+	 background-image: linear-gradient(to right bottom, rgba(126, 213, 111, .85), rgba(40, 180, 133, .85));
+}
+ .card-heading-span-3 {
+	 background-image: linear-gradient(to right bottom, rgba(41, 152, 255, .85), rgba(86, 67, 250, .85));
+}
+ .card-details {
+	 padding: 30px;
+}
+ .card-details ul {
+	 list-style: none;
+	 width: 80%;
+	 margin: 0 auto;
+	 padding: 0;
+}
+ .card-details ul li {
+	 text-align: center;
+   text-decoration-color: #26272b;
+	 font-size: 15px;
+	 padding: 10px;
+}
+ .card-details ul li:not(:last-child) {
+	 border-bottom: 1px solid #eee;
+}
+ .card-cta {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 width: 90%;
+	 text-align: center;
+}
+ .card-price-box {
+	 text-align: center;
+	 text-decoration-color:#fff;
+	 margin-bottom: 80px;
+}
+ .card-price-only {
+	 font-size: 14px;
+	 text-transform: uppercase;
+}
+ .card-price-value {
+	 font-size: 60px;
+	 font-weight: 100;
+}
+ .btn, .btn:link, .btn:visited {
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 padding: 15px 40px;
+	 display: inline-block;
+	 border-radius: 100px;
+	 transition: all 0.2s;
+	 position: relative;
+	 font-size: 16px;
+	 border: none;
+	 cursor: pointer;
+
+	 color:white;
+}
+ .btn::after {
+	 content: "";
+	 display: inline-block;
+	 height: 100%;
+	 width: 100%;
+	 border-radius: 10rem;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 z-index: -1;
+	 transition: all 0.4s;
+
+}
+ .btn:hover {
+	 transform: translateY(-3px);
+	 box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+ .btn:hover::after {
+	 transform: scaleX(1.4) scaleY(1.6);
+	 opacity: 0;
+}
+ .btn:active, .btn:focus {
+	 outline: none;
+	 transform: translateY(-1px);
+	 box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+ 
+.wrapper {
+	 padding: 48px 48px 48px 48px;
+
+}
+ h2 {
+	 padding-top: 1em;
+	 font-size: 2em;
+	 font-weight: 900;
+	 color: #3c3b3b;
+   font-family: 'Abel', serif;
+	 letter-spacing: 0.25em;
+	 line-height: 1.65;
+	 margin: 0 0 1em 0;
+	 text-transform: uppercase;
+}
+ p {
+  font-family: 'Abel', serif;
+	 font-size: 0.8em;
+	 font-weight: 200;
+	 letter-spacing: 0.25em;
+	 line-height: 2.5;
+	 text-transform: uppercase;
+}
+ h3 {
+  font-family: 'Abel', serif;
+	 font-weight: 800;
+	 letter-spacing: 0.25em;
+	 line-height: 1.65;
+	 margin: 0 0 1em 0;
+	 text-transform: uppercase;
+	 font-size: 0.8em;
+}
+ .side-bar {
+	 padding-top: 2em;
+}
+ .side-bar .logo {
+	 border-radius: 50%;
+	 width: 75px;
+	 height: 75px;
+}
+ .section {
+	 border-top: solid 1px rgba(160, 160, 160, 0.3);
+	 margin: 3em 0 0 0;
+	 padding: 3em 0 0 0;
+}
+ .section-2 {
+	 border-top: solid 1px rgba(160, 160, 160, 0.3);
+	 margin: 1.5em 0 0 0;
+	 padding: 1.5em 0 0 0;
+}
+ .card-side {
+	 width: 100%;
+	 padding-bottom: 2.5em;
+}
+ .card-side img {
+	 height: 12em;
+	 width: 100%;
+}
+ .card-side .title {
+	 position: relative;
+	 background: #fff;
+	 width: 100%;
+	 padding: 1.25em 4.25em 0.1em 1.25em;
+}
+ .card-side .title .time {
+	 font-size: 0.6em;
+	 margin: -0.625em 0 1.7em 0;
+}
+ .card-side .title img {
+	 border-radius: 50%;
+	 height: 3em;
+	 width: 3em;
+	 position: absolute;
+	 top: 1.3em;
+	 right: 2.5em;
+}
+ .posts {
+	 padding-left: 6em;
+	 padding-right: 2em;
+}
+ .posts .time {
+	 margin-top: -0.9em;
+}
+ .posts img {
+	 position: absolute;
+	 top: 0em;
+	 left: 2em;
+	 height: 4em;
+	 width: 4em;
+}
+ .article {
+	 border: solid 1px rgba(160, 160, 160, 0.3);
+	 background-color: #fff;
+	 margin-bottom: 3em;
+}
+ .article .left-content {
+	 border-right: solid 1px rgba(160, 160, 160, 0.3);
+	 padding: 3.75em 3em 3.3em 3em;
+}
+ .article .left-content p {
+	 font-size: 0.7em;
+}
+ .article .left-content h2 {
+	 font-size: 1.7em;
+}
+ .article .right-content {
+	 padding: 5em 3em 3.3em 3em;
+}
+ .article .right-content h2 {
+	 color: #3c3b3b;
+   font-family: 'Abel', serif;
+	 font-size: 0.7em;
+	 font-weight: 800;
+	 letter-spacing: 0.25em;
+	 margin-top: 0.5em;
+	 text-transform: uppercase;
+	 margin-bottom: 1.5em;
+}
+ .article .right-content .name {
+  font-family: 'Abel', serif;
+	 font-size: 0.7em;
+	 font-weight: 400;
+	 letter-spacing: 0.25em;
+	 line-height: 2.5;
+	 text-transform: uppercase;
+}
+ .article .right-content img {
+	 border-radius: 50%;
+	 height: 3em;
+	 width: 3em;
+}
+ .article .img-article {
+	 padding: 3.75em 3em 3.3em 3em;
+	 border-top: solid 1px rgba(160, 160, 160, 0.3);
+}
+ .article .img-article img {
+	 width: 100%;
+	 height: 18em;
+}
+ .article .img-article p {
+	 text-transform: initial;
+	 text-align: justify;
+	 margin-bottom: 3em;
+}
+ .btn-primary {
+	 background: transparent;
+	 color: #3c3b3b;
+   font-family: 'Abel', serif;
+	 font-size: 0.6em;
+	 font-weight: 800;
+	 height: 4.8125em;
+	 letter-spacing: 0.25em;
+	 line-height: 4.8125em;
+	 padding: 0 2.5em;
+	 text-transform: uppercase;
+}
+
+
+
+ 
+
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, left,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Abel', serif;
+  color: #111433;
+  background-color: #ffffff;
+}
+
+a {
+  color: #3f8654;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input {
+  font-family: 'Abel', serif;
+  font-size: 1.6rem;
+}
+
+/* remove “X” from search input field */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+header {
+  height: 100px;
+  background: #ffffff;
+}
+
+.cd-dropdown-wrapper {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  margin: 30px 0 0 5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cd-dropdown-trigger {
+  display: block;
+  position: relative;
+  padding: 0 36px 0 20px;
+  line-height: 40px;
+  background-color: #111433;
+  color: #ffffff;
+  border-radius: 3px;
+}
+.no-touch .cd-dropdown-trigger:hover {
+  background-color: #171b46;
+}
+.cd-dropdown-trigger::before, .cd-dropdown-trigger::after {
+  /* this is the arrow inside the dropdown trigger*/
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  height: 2px;
+  width: 9px;
+  background: #ffffff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: width 0.3s, -webkit-transform 0.3s;
+  -moz-transition: width 0.3s, -moz-transform 0.3s;
+  transition: width 0.3s, transform 0.3s;
+}
+.cd-dropdown-trigger::before {
+  right: 22px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cd-dropdown-trigger::after {
+  right: 17px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+@media only screen and (min-width: 1024px) {
+  .cd-dropdown-trigger {
+    font-size: 1.5rem;
+  }
+  .cd-dropdown-trigger.dropdown-is-active {
+    background-color: #3f8654;
+  }
+  .no-touch .cd-dropdown-trigger.dropdown-is-active:hover {
+    background-color: #47975f;
+  }
+  .cd-dropdown-trigger.dropdown-is-active::before, .cd-dropdown-trigger.dropdown-is-active::after {
+    /* transform the arrow into a 'X' */
+    width: 14px;
+  }
+  .cd-dropdown-trigger.dropdown-is-active::before {
+    /* transform the arrow into a 'X' */
+    -webkit-transform: translateX(5px) rotate(-45deg);
+    -moz-transform: translateX(5px) rotate(-45deg);
+    -ms-transform: translateX(5px) rotate(-45deg);
+    -o-transform: translateX(5px) rotate(-45deg);
+    transform: translateX(5px) rotate(-45deg);
+  }
+  .cd-dropdown-trigger.dropdown-is-active::after {
+    /* transform the arrow into a 'X' */
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.cd-dropdown h2,
+.cd-dropdown-content a,
+.cd-dropdown-content ul a {
+  height: 50px;
+  line-height: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .cd-dropdown h2,
+  .cd-dropdown-content a,
+  .cd-dropdown-content ul a {
+    height: 60px;
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-dropdown h2,
+  .cd-dropdown-content a,
+  .cd-dropdown-content ul a {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+.cd-dropdown h2,
+.cd-dropdown-content a,
+.cd-dropdown-content ul a,
+.cd-dropdown-content .cd-divider {
+  padding: 0 20px;
+}
+
+.cd-dropdown {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111433;
+  color: #ffffff;
+  visibility: hidden;
+  /* Force Hardware Acceleration */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0.5s;
+  -moz-transition: -moz-transform 0.5s 0s, visibility 0s 0.5s;
+  transition: transform 0.5s 0s, visibility 0s 0.5s;
+}
+.cd-dropdown h2 {
+  /* dropdown title - mobile version only */
+  position: relative;
+  z-index: 1;
+  color: #585a70;
+  background-color: #111433;
+  border-bottom: 1px solid #242643;
+}
+.cd-dropdown .cd-close {
+  /* 'X' close icon - mobile version only */
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+}
+.cd-dropdown .cd-close::after, .cd-dropdown .cd-close::before {
+  /* this is the 'X' icon */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  height: 20px;
+  width: 2px;
+  background-color: #ffffff;
+}
+.cd-dropdown .cd-close::after {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.cd-dropdown .cd-close::before {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.cd-dropdown.dropdown-is-active {
+  visibility: visible;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform 0.5s 0s, visibility 0s 0s;
+  transition: transform 0.5s 0s, visibility 0s 0s;
+}
+@media only screen and (min-width: 768px) {
+  .cd-dropdown .cd-close {
+    top: 5px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-dropdown {
+    position: absolute;
+    top: calc(100% - 2px);
+    /* reset style*/
+    height: auto;
+    width: auto;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    background-color: #ffffff;
+    color: #111433;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px);
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, -webkit-transform 0.3s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s;
+  }
+  .open-to-left .cd-dropdown {
+    /* use the .open-to-left class if you want to open the dropdown on the left */
+    right: 0;
+    left: auto;
+  }
+  .cd-dropdown h2, .cd-dropdown .cd-close {
+    /* on desktop - hide title and 'X' */
+    display: none;
+  }
+  .cd-dropdown.dropdown-is-active {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: opacity 0.3s 0s, visibility 0.3s 0s, -webkit-transform 0.3s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0.3s 0s, -moz-transform 0.3s 0s;
+    transition: opacity 0.3s 0s, visibility 0.3s 0s, transform 0.3s 0s;
+  }
+}
+
+.cd-dropdown-content, .cd-dropdown-content ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+  padding-top: 50px;
+}
+.cd-dropdown-content a, .cd-dropdown-content ul a {
+  display: block;
+  color: #ffffff;
+  /* truncate text with ellipsis if too long */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-top-width: 1px;
+  border-color: #242643;
+  border-style: solid;
+}
+.cd-dropdown-content li:first-of-type > a, .cd-dropdown-content ul li:first-of-type > a {
+  border-top-width: 0;
+}
+.cd-dropdown-content li:last-of-type > a, .cd-dropdown-content ul li:last-of-type > a {
+  border-bottom-width: 1px;
+}
+.cd-dropdown-content .cd-divider, .cd-dropdown-content ul .cd-divider {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #0b0e23;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #585a70;
+  text-transform: uppercase;
+}
+.cd-dropdown-content .cd-divider + li > a, .cd-dropdown-content ul .cd-divider + li > a {
+  border-top-width: 0;
+}
+.cd-dropdown-content a, .cd-dropdown-content .cd-search, .cd-dropdown-content .cd-divider, .cd-dropdown-content ul a, .cd-dropdown-content ul .cd-search, .cd-dropdown-content ul .cd-divider {
+  /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.cd-dropdown-content.is-hidden, .cd-dropdown-content ul.is-hidden {
+  /* push the secondary dropdown items to the right */
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.cd-dropdown-content.is-hidden > li > a, .cd-dropdown-content.is-hidden > li > .cd-search, .cd-dropdown-content.is-hidden > .cd-divider, .cd-dropdown-content.move-out > li > a, .cd-dropdown-content.move-out > li > .cd-search, .cd-dropdown-content.move-out > .cd-divider, .cd-dropdown-content ul.is-hidden > li > a, .cd-dropdown-content ul.is-hidden > li > .cd-search, .cd-dropdown-content ul.is-hidden > .cd-divider, .cd-dropdown-content ul.move-out > li > a, .cd-dropdown-content ul.move-out > li > .cd-search, .cd-dropdown-content ul.move-out > .cd-divider {
+  /* lower down the dropdown items opacity - when secondary dropdown slides in or for dropdown items hidden on the right */
+  opacity: 0;
+}
+.cd-dropdown-content.move-out > li > a, .cd-dropdown-content.move-out > li > .cd-search, .cd-dropdown-content.move-out > .cd-divider, .cd-dropdown-content ul.move-out > li > a, .cd-dropdown-content ul.move-out > li > .cd-search, .cd-dropdown-content ul.move-out > .cd-divider {
+  /* push the dropdown items to the left when secondary dropdown slides in */
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.dropdown-is-active .cd-dropdown-content, .dropdown-is-active .cd-dropdown-content ul {
+  -webkit-overflow-scrolling: touch;
+}
+@media only screen and (min-width: 768px) {
+  .cd-dropdown-content, .cd-dropdown-content ul {
+    padding-top: 60px;
+  }
+  .cd-dropdown-content a, .cd-dropdown-content ul a {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-dropdown-content, .cd-dropdown-content ul {
+    padding-top: 0;
+    overflow: visible;
+  }
+  .cd-dropdown-content a, .cd-dropdown-content ul a {
+    color: #111433;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border-color: #ebebeb;
+  }
+  .cd-dropdown-content .cd-divider, .cd-dropdown-content ul .cd-divider {
+    background-color: transparent;
+    color: #b3b3b3;
+    border-top: 1px solid #ebebeb;
+  }
+  .cd-dropdown-content .cd-divider + li > a, .cd-dropdown-content ul .cd-divider + li > a {
+    border-top-width: 1px;
+  }
+  .cd-dropdown-content.is-hidden > li > a, .cd-dropdown-content.is-hidden > li > .cd-search, .cd-dropdown-content.is-hidden > .cd-divider, .cd-dropdown-content.move-out > li > a, .cd-dropdown-content.move-out > li > .cd-search, .cd-dropdown-content.move-out > .cd-divider, .cd-dropdown-content ul.is-hidden > li > a, .cd-dropdown-content ul.is-hidden > li > .cd-search, .cd-dropdown-content ul.is-hidden > .cd-divider, .cd-dropdown-content ul.move-out > li > a, .cd-dropdown-content ul.move-out > li > .cd-search, .cd-dropdown-content ul.move-out > .cd-divider {
+    /* reset mobile style */
+    opacity: 1;
+  }
+}
+
+.cd-dropdown-content .see-all a {
+  /* different style for the See all links */
+  color: #3f8654;
+}
+.cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item, .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item {
+  /* items with picture (or icon) and title */
+  height: 80px;
+  line-height: 80px;
+}
+.cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item h3, .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item h3 {
+  /* truncate text with ellipsis if too long */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item {
+  padding-left: 90px;
+}
+.cd-dropdown-content .cd-dropdown-gallery img {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: auto;
+  left: 20px;
+  top: 50%;
+  margin-top: -20px;
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item {
+  padding-left: 75px;
+  position: relative;
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item p {
+  color: #111433;
+  font-size: 1.3rem;
+  /* hide description on small devices */
+  display: none;
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item::before {
+  /* item icon */
+  content: '';
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position:left;
+  background-size: 40px 40px;
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-1::before {
+  background-image: url("../img/nucleo-icon-1.svg");
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-2::before {
+  background-image: url("../img/nucleo-icon-2.svg");
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-3::before {
+  background-image: url("../img/nucleo-icon-3.svg");
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-4::before {
+  background-image: url("../img/nucleo-icon-4.svg");
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-5::before {
+  background-image: url("../img/nucleo-icon-5.svg");
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-6::before {
+  background-image: url("../img/nucleo-icon-6.svg");
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-7::before {
+  background-image: url("../img/nucleo-icon-7.svg");
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-8::before {
+  background-image: url("../img/nucleo-icon-8.svg");
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-9::before {
+  background-image: url("../img/nucleo-icon-9.svg");
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-10::before {
+  background-image: url("../img/nucleo-icon-10.svg");
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-11::before {
+  background-image: url("../img/nucleo-icon-11.svg");
+}
+.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-12::before {
+  background-image: url("../img/nucleo-icon-12.svg");
+}
+@media only screen and (min-width: 1024px) {
+  .cd-dropdown-content {
+    /* reset mobile style */
+    position: static;
+    height: auto;
+    width: 300px;
+  }
+  .cd-dropdown-content > li:last-of-type a {
+    border-bottom: none;
+  }
+  .no-touch .cd-dropdown-content > li:not(.has-children) a:hover {
+    color: #3f8654;
+  }
+  .cd-dropdown-content.move-out > li > a, .cd-dropdown-content.move-out > li > .cd-search, .cd-dropdown-content.move-out > .cd-divider {
+    /* reset mobile style */
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown, .cd-dropdown-content .cd-dropdown-gallery, .cd-dropdown-content .cd-dropdown-icons {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    left: 100%;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+  }
+  .cd-dropdown-content .cd-secondary-dropdown::after, .cd-dropdown-content .cd-dropdown-gallery::after, .cd-dropdown-content .cd-dropdown-icons::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .open-to-left .cd-dropdown-content .cd-secondary-dropdown, .open-to-left .cd-dropdown-content .cd-dropdown-gallery, .open-to-left .cd-dropdown-content .cd-dropdown-icons {
+    /* use the .open-to-left class if you want to open the dropdown on the left */
+    left: auto;
+    right: 100%;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown.is-hidden, .cd-dropdown-content .cd-dropdown-gallery.is-hidden, .cd-dropdown-content .cd-dropdown-icons.is-hidden {
+    /* reset mobile style */
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .cd-dropdown-content .cd-secondary-dropdown.fade-in, .cd-dropdown-content .cd-dropdown-gallery.fade-in, .cd-dropdown-content .cd-dropdown-icons.fade-in {
+    /* animate secondary dropdown items when hovering over of of the .cd-dropdown-content list items */
+    -webkit-animation: cd-fade-in 0.2s;
+    -moz-animation: cd-fade-in 0.2s;
+    animation: cd-fade-in 0.2s;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown.fade-out, .cd-dropdown-content .cd-dropdown-gallery.fade-out, .cd-dropdown-content .cd-dropdown-icons.fade-out {
+    /* animate secondary dropdown items when hovering over of of the .cd-dropdown-content list items */
+    -webkit-animation: cd-fade-out 0.2s;
+    -moz-animation: cd-fade-out 0.2s;
+    animation: cd-fade-out 0.2s;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown > .go-back, .cd-dropdown-content .cd-dropdown-gallery > .go-back, .cd-dropdown-content .cd-dropdown-icons > .go-back {
+    display: none;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown > .see-all, .cd-dropdown-content .cd-dropdown-gallery > .see-all, .cd-dropdown-content .cd-dropdown-icons > .see-all {
+    position: absolute;
+    bottom: 20px;
+    height: 45px;
+    text-align: left;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown > .see-all a, .cd-dropdown-content .cd-dropdown-gallery > .see-all a, .cd-dropdown-content .cd-dropdown-icons > .see-all a {
+    margin: 0;
+    height: 100%;
+    line-height: 45px;
+    background: #ebebeb;
+    pointer-events: auto;
+    -webkit-transition: color 0.2s, background-color 0.2s;
+    -moz-transition: color 0.2s, background-color 0.2s;
+    transition: color 0.2s, background-color 0.2s;
+  }
+  .no-touch .cd-dropdown-content .cd-secondary-dropdown > .see-all a:hover, .no-touch .cd-dropdown-content .cd-dropdown-gallery > .see-all a:hover, .no-touch .cd-dropdown-content .cd-dropdown-icons > .see-all a:hover {
+    color: #ffffff;
+    background-color: #111433;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown .cd-dropdown-item, .cd-dropdown-content .cd-secondary-dropdown a, .cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item, .cd-dropdown-content .cd-dropdown-gallery a, .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item, .cd-dropdown-content .cd-dropdown-icons a {
+    border: none;
+  }
+  .cd-dropdown-content .cd-dropdown-gallery, .cd-dropdown-content .cd-dropdown-icons {
+    padding: 20px 30px 100px;
+  }
+  .cd-dropdown-content .cd-dropdown-gallery > .see-all, .cd-dropdown-content .cd-dropdown-icons > .see-all {
+    width: calc(100% - 60px);
+  }
+  .cd-dropdown-content .cd-dropdown-icons > li, .cd-dropdown-content .cd-secondary-dropdown > li {
+    width: 100%;
+    float: left;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown {
+    overflow: hidden;
+    width: 800px;
+    padding-bottom: 65px;
+    display: flex;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown::before {
+    /* this is the separation line in the middle of the .cd-secondary-dropdown element */
+    position: absolute;
+    content: '';
+    top: 290px;
+    left: 15px;
+    height: 1px;
+    width: 520px;
+    background-color: #ebebeb;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown > li > a {
+    color: #3f8654;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    line-height: 30px;
+    height: 30px;
+    pointer-events: none;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown > li > a::after, .cd-dropdown-content .cd-secondary-dropdown > li > a::before {
+    /* hide the arrow */
+    display: none;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown.move-out > li > a {
+    /* reset mobile style */
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .cd-dropdown-content .cd-secondary-dropdown > li {
+    margin: 20px 0;
+    border-right-width: 1px;
+    border-color: #ebebeb;
+    border-style: solid;
+    padding: 0 30px;
+    height: 250px;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown > li:nth-of-type(2n) {
+    border-right-width: 0;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown > li > ul {
+    /* reset mobile style */
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+    position: relative;
+    height: auto;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown > li > ul > .go-back {
+    display: none;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown a {
+    line-height: 25px;
+    height: 25px;
+    font-size: 1.3rem;
+    padding-left: 0;
+  }
+  .no-touch .cd-dropdown-content .cd-secondary-dropdown a:hover {
+    color: #3f8654;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown ul {
+    padding-bottom: 25px;
+    overflow: hidden;
+    height: auto;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown .go-back a {
+    padding-left: 20px;
+    color: transparent;
+  }
+  .no-touch .cd-dropdown-content .cd-secondary-dropdown .go-back a:hover {
+    color: transparent;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown .go-back a::before, .cd-dropdown-content .cd-secondary-dropdown .go-back a::after {
+    left: 0;
+  }
+  .cd-dropdown-content .cd-secondary-dropdown .see-all {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .cd-dropdown-content .cd-dropdown-gallery {
+    width: 800px;
+    padding-bottom: 100px;
+  }
+  .cd-dropdown-content .cd-dropdown-gallery > li {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+  }
+  .cd-dropdown-content .cd-dropdown-gallery > li:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  .cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item {
+    padding: 0;
+    height: auto;
+    line-height: normal;
+    color: #3f8654;
+    margin-bottom: 2em;
+  }
+  .cd-dropdown-content .cd-dropdown-gallery > li:nth-last-of-type(2) a,
+  .cd-dropdown-content .cd-dropdown-gallery > li:last-of-type a {
+    margin-bottom: 0;
+  }
+  .cd-dropdown-content .cd-dropdown-gallery img {
+    position: static;
+    height: auto;
+    width: 100%;
+    margin: 0 0 0.6em;
+  }
+  .cd-dropdown-content .cd-dropdown-icons {
+    width: 100%;
+  }
+  .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item {
+    height: 80px;
+    line-height: 1.2;
+    padding: 24px 0 0 85px;
+  }
+  .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item:hover {
+    background: #ebebeb;
+  }
+  .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item h3 {
+    color: #3f8654;
+    font-weight: bold;
+  }
+  .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item p {
+    display: block;
+    font-size: 1.2rem;
+  }
+  .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item::before {
+    left: 25px;
+  }
+  .cd-dropdown-content > .has-children > ul {
+    visibility: hidden;
+  }
+  .cd-dropdown-content > .has-children > ul.is-active {
+    /* when hover over .cd-dropdown-content items - show subnavigation */
+    visibility: visible;
+  }
+  .cd-dropdown-content > .has-children > .cd-secondary-dropdown.is-active > li > ul {
+    /* if .cd-secondary-dropdown is visible - show also subnavigation */
+    visibility: visible;
+  }
+  .cd-dropdown-content > .has-children > a.is-active {
+    /* hover effect for .cd-dropdown-content items with subnavigation */
+    box-shadow: inset 2px 0 0 #3f8654;
+    color: #3f8654;
+  }
+  .cd-dropdown-content > .has-children > a.is-active::before, .cd-dropdown-content > .has-children > a.is-active::after {
+    background: #3f8654;
+  }
+  .open-to-left .cd-dropdown-content > .has-children > a.is-active {
+    box-shadow: inset -2px 0 0 #3f8654;
+  }
+}
+
+@-webkit-keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@-moz-keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes cd-fade-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: visible;
+  }
+}
+@-moz-keyframes cd-fade-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: visible;
+  }
+}
+@keyframes cd-fade-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: visible;
+  }
+}
+
+.has-children > a, .go-back a {
+  position: relative;
+}
+.has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after {
+  /* arrow icon in CSS - for element with nested unordered lists */
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  display: inline-block;
+  height: 1px;
+  width: 8px;
+  background: #ffffff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.has-children > a::before, .go-back a::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.has-children > a::after, .go-back a::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+@media only screen and (min-width: 1024px) {
+  .has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after {
+    background: #b3b3b3;
+  }
+}
+
+.has-children > a {
+  padding-right:px;
+}
+.has-children > a::before, .has-children > a::after {
+  /* arrow goes on the right side - children navigation */
+  right: 20px;
+  -webkit-transform-origin: 9px 50%;
+  -moz-transform-origin: 9px 50%;
+  -ms-transform-origin: 9px 50%;
+  -o-transform-origin: 9px 50%;
+  transform-origin: 9px 50%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .open-to-left .cd-dropdown-content > .has-children > a {
+    padding-left: ;
+    padding-right: 20px;
+  }
+  .open-to-left .cd-dropdown-content > .has-children > a::before, .open-to-left .cd-dropdown-content > .has-children > a::after {
+    right: auto;
+    left: 20px;
+
+  }
+}
+.cd-dropdown-content .go-back a {
+  padding-left: 40px;
+}
+.cd-dropdown-content .go-back a::before, .cd-dropdown-content .go-back a::after {
+  /* arrow goes on the left side - go back button */
+  left: 20px;
+  -webkit-transform-origin: 1px 50%;
+  -moz-transform-origin: 1px 50%;
+  -ms-transform-origin: 1px 50%;
+  -o-transform-origin: 1px 50%;
+  transform-origin: 1px 50%;
+}
+
+.cd-main-content {
+  background-color: #e6e6e6;
+  min-height: calc(100vh - 100px);
+  padding: 2em 5%;
+  line-height: 2;
+}
+
+.no-js .cd-dropdown-wrapper:hover .cd-dropdown {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.no-js .cd-dropdown-wrapper .cd-close {
+  display: none;
+}
+
+.banner {
+  height: 100%;
+  width: 100%;
+  background-color: #999;
+  padding: 20px;
+  display: flex;
+  justify-content: left;
+  align-items:left;
+  text-align: left;
+  color: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-family: 'Abel', serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+h1
+ {
+  font-weight: 300;
+  margin: 0 0 2.4rem 0;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.3;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+}
+/**
+ * Material Modal CSS
+ */
+.modal {
+  will-change: visibility, opacity;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition-delay: $modal-delay;
+}
+.modal--active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal--align-top {
+  align-items: flex-start;
+}
+.modal__bg {
+  background: transparent;
+}
+.modal__dialog {
+  max-width: 600px;
+  padding: 1.2rem;
+}
+.modal__content {
+  will-change: transform, opacity;
+  position: relative;
+  padding: 2.4rem;
+  background: #ffffff;
+  background-clip: padding-box;
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.25);
+  opacity: 0;
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.modal__content--active {
+  opacity: 1;
+}
+.modal__close {
+  z-index: 1100;
+  cursor: pointer;
+}
+.modal__trigger {
+  position: relative;
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  color: rgba(0,0,0,0.7);
+  line-height: 1;
+  cursor: pointer;
+  background: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  user-select: none;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.modal__trigger--active {
+  z-index: 10;
+}
+.modal__trigger:hover {
+  background: #ffffff;
+}
+#modal__temp {
+  will-change: transform, opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  transform: none;
+  opacity: 1;
+  transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+/**
+ * Demo specific CSS
+ */
+
+img {
+  max-width: 100%;
+}
+.demo-btns header {
+  padding: 7vh 10vw;
+  background: #ffebee;
+  display: flex;
+  align-items: center;
+}
+.demo-btns header h1 {
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+  font-weight: 300;
+}
+.demo-btns .info {
+  background: #ffffff;
+  padding: 3vh 10vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+.demo-btns p {
+  text-align: center;
+  color: #fff;
+}
+.demo-btns .link {
+  font-size: 20px;
+}
+.demo-btns .modal__trigger {
+  margin-right: 3px;
+}
+@media (max-width: 640px) {
+  .demo-btns .modal__trigger {
+    margin-bottom: 0.8rem;
+  }
+}
+.demo-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.2rem;
+  padding: 0.6rem;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.demo-close svg {
+  width: 24px;
+  fill: #fff;
+  pointer-events: none;
+  vertical-align: top;
+}
+.demo-close:hover {
+  background: rgba(0,0,0,0.6);
+}
+.logo {
+  position: fixed;
+  bottom: 3vh;
+  right: 3vw;
+  z-index: 2;
+}
+.logo img {
+  width: 45px;
+  transform: rotate(0);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.logo img:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="ABC.png" class="rounded" alt="logo"  height="80">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav mr-auto">
+            <li style="margin-right: 1cm; font-size: large;" class="nav-item active">
+              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li style="margin-right: 1cm; font-size: large;" class="nav-item dropdown">
+              <a class="nav-link mr-sm-4 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="course1.html">HTML</a>
+                <a class="dropdown-item" href="course2.html">C++</a>
+                <a class="dropdown-item" href="course3.html">Python</a>
+                <a class="dropdown-item" href="course4.html">JavaScript</a>
+            </div>
+            </li>
+            <li style="margin-right: 1cm; font-size: large;" class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li style="margin-right: 1cm; font-size: large;" class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+      <div class="wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-12 side-bar">
+                  <img class="logo" src="https://cdn.clipart.email/d9525dcb0742853a7e77825dabda4067_html-5-logo-png-picture-1770109-html-5-logo-png_512-512.png" alt="" />
+                  <h1 style="font-weight: 400;" >HTML</h1 >
+                  <p>Learn HTML & CSS From Scratch While Designing And Coding Your Own Project Step-by-step within 30 days with us.</p>
+                  <div class="section"></div>
+                </div>
+
+
+                
+
+                  <div class="cd-dropdown-wrapper">
+                     <nav style="margin-left: 0;" class="cd-dropdown dropdown-is-active">
+                        <h2>Title</h2>
+                        <a href="#0" class="cd-close">Close</a>
+                        <ul class="cd-dropdown-content">
+                           <li class="has-children">
+                              <a href="#">Top-Up Pages</a>
+                              <ul class="cd-secondary-dropdown">
+                                 <li class="go-back"><a href="#0">Menu</a></li>
+
+                                 <li class="has-children">
+                                    <ul class="is-hidden">
+                                       <li><a href="home.html">Home</a></li><br>
+                                       <li class="has-children">
+                                          <a href="about.html">About</a>
+                                       </li><br>
+                                       <li><a href="contact.html">Contact</a></li><br>
+                                       <li><a href="login.html">Login</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class="banner banner-1 justify-content-left">Banner 1</li>
+                              </ul>
+                           </li>
+                          
+                           </li>
+                          
+                           <li class="has-children">
+                              <a href="#">Courses Schedule</a>
+                              <ul class="cd-dropdown-icons is-hidden">
+                                 <li class="go-back"><a href="#0">Menu</a></li>
+                                 <li>
+                                    <a class="cd-dropdown-item item-1" href="schedule1html">
+                                       <h3>HTML Schedule</h3>
+                                       <p>Will Start June 1 to 28.</p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="cd-dropdown-item item-2" href="schedule2.html">
+                                       <h3> C++ Schedule</h3>
+                                       <p>Will Start May 15.</p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="cd-dropdown-item item-3" href="schedule3.html">
+                                       <h3>Python Schedule</h3>
+                                       <p>Will Start June 30.</p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="cd-dropdown-item item-4" href="schedule4.html">
+                                       <h3>JavaScript V</h3>
+                                       <p>Will Start June 25.</p>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li><a href="course2.html">C++</a></li>
+                           <li><a href="Course3.html">Python</a></li>
+                           <li><a href="course4.html">JavaScript</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+
+
+
+
+
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-12 article">
+                  <div class="row">
+                    <div class="col-md-8 left-content">
+                      <h2>HTML Function</h2>
+                      <p>Learn HTML & CSS From Scratch While Designing And Coding Your Own Project Step-by-step.</p>
+                    </div>
+                    <div class="col-md-4 right-content">
+                      <h2>June 1, 2020</h2>
+                      <span class="name">HTML Function</span>
+                      <img src="https://cdn.clipart.email/d9525dcb0742853a7e77825dabda4067_html-5-logo-png-picture-1770109-html-5-logo-png_512-512.png" alt="" />
+                    </div>
+                    <div class="col-md-12 img-article">
+                      <img src="https://html.com/wp-content/uploads/html-hpg-featured-new.png" alt="" />
+                      <br><br />
+                      <p>
+                       <b style="font-weight: 400;"> Why Learn HTML?<b><br><br>
+                        HTML is the foundation of all web pages. Without HTML, you wouldn’t be able to organize text or add images or videos to your web pages. HTML is the beginning of everything you need to know to create engaging web pages!
+                        <br> <br>
+                        Take-Away Skills <br> <br>
+                        You will learn all the common HTML tags used to structure HTML pages, the skeleton of all websites. You will also be able to create HTML tables to present tabular data efficiently.
+                      </p>
+                        <div class="info">
+                          <div class="buttons">
+                            <p>
+                              <a href="" data-modal="#modal" class="modal__trigger">Learn More</a>
+                             
+                            </p>
+                          </div>
+                        </div>
+                    
+
+                        	<!-- Modal -->
+	                    <div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
+		                    <div class="modal__dialog">
+		                    	<div class="modal__content">
+				                    <h1>Intro to HTML and CSS</h1>
+				                    <p>
+                              
+                            Throughout this course, you'll learn about the underlying structure of the web - HTML.
+                             You'll learn how to use this tree-like structure to create websites. You'll also learn how to apply styling to 
+                             a website through CSS. You'll learn about CSS syntax, selectors, and units.
+                            Along the way, you'll also learn about code editors and a browser's Developer Tools.
+                            </p>
+				
+				                <!-- modal close button -->
+				            <a href="" class="modal__close demo-close">
+					            <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+			            	</a>
+				
+			                    </div>
+                        </div>
+	                    </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+          <div class="container">
+            <div class="row">
+               <div class="col-sm-4">
+                  <div class="card">
+                     <div class="card-side card-side-front">
+                        <div class="card-picture card-picture-1">
+                         <img src="https://qph.fs.quoracdn.net/main-qimg-ec7422b648d6ef72a0a57e4aa643cf6a"> 
+                           &nbsp;
+                        </div>
+                        <h4 class="card-heading">
+                           <span class="card-heading-span card-heading-span-1">HTML and CSS Fundamentals</span>
+                        </h4>
+                        <div  class="card-details">
+                           <ul>
+                              <li> 13 lectures&nbsp; / 2 total hours&nbsp;<br>
+                                Beginner Level
+                                </li>
+                              <li>Learn What is HTML and Have your first look at HTML</li>
+                              <li>Learn how to declare your HTML document using.</li>
+                              <li>Learn How HTML is Structured and have a closer look to elements</li>
+                              <li>Difficulty: easy</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="card-side card-side-back card-side-back-1">
+                        <div class="card-cta">
+                           <div class="card-price-box">
+                              <p class="card-price-only">Special Price</p>
+                              <p class="card-price-value">$13.99</p>
+                           </div>
+                           <p class="card-price-only">Brad Schiff</p>
+                           <a href="c1-detail1.html" class="btn btn-white">View Course</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+          
+          
+               <div class="col-sm-4">
+                  <div class="card">
+                     <div class="card-side card-side-front">
+                        <div class="card-picture card-picture-2">
+                          <img src="https://img-a.udemycdn.com/course/750x422/1581138_a968_2.jpg">
+                           &nbsp;
+                        </div>
+                        <h4 class="card-heading">
+                           <span class="card-heading-span card-heading-span-2">HTML, CSS and JavaScript</span>
+                        </h4>
+                        <div class="card-details">
+                           <ul>
+                            <li>125 lectures &nbsp;/
+                              10 total hours<br>
+                              All Levels</li>
+                              <li>Develop your own website</li>
+                              <li>Design beautiful website using html and css</li>
+                              <li>Bag strong basic fundamental knowledge from html to html5</li>
+                              
+                           </ul>
+                        </div>
+          
+                     </div>
+                     <div class="card-side card-side-back card-side-back-2">
+                        <div class="card-cta">                           <div class="card-price-box">
+                              <p class="card-price-only">Special Price </p>
+                              <p class="card-price-value">$9.97</p>
+                           </div>
+                           <p class="card-price-only">DoEdu IT Educations</p>
+                           <a href="c1-detail1.html" class="btn btn-white">View Course</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+          
+          
+               <div class="col-sm-4">
+                  <div class="card">
+                     <div class="card-side card-side-front">
+                        <div class="card-picture card-picture-3">
+                          <img src="https://img-a.udemycdn.com/course/750x422/59535_1f48_6.jpg">
+                           &nbsp;
+                        </div>
+                        <h4 class="card-heading">
+                           <span class="card-heading-span card-heading-span-3">HTML/CSS Bootcamp </span>
+                        </h4>
+                        <div class="card-details">
+                           <ul>
+                              <li>144 lectures &nbsp;/
+                                18.5 total hours<br>
+                                Beginner Level</li>
+                              <li>Learn HTML, CSS, Flexbox, and CSS Grid</li>
+                              <li>Build websites using HTML and CSS</li>
+                              <li>Use Flexbox to easily align content on the page</li>
+                           </ul>
+                        </div>
+          
+                     </div>
+                     <div class="card-side card-side-back card-side-back-3">
+                        <div class="card-cta">
+                           <div class="card-price-box">
+                              <p class="card-price-only">Special Pice</p>
+                              <p class="card-price-value">$8.97</p>
+                           </div>
+                           <p class="card-price-only">Jordan Hudgens</p>
+                           <a href="c1-detail1.html" class="btn btn-white">View Course</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+    
+      </main>
+      <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+
+
+                  <!-- Site footer -->
+              <footer class="site-footer">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-6">
+             
+                          <p class="text-justify">Email<br> 
+                               <i>hsuyeehtet351@gmail.com </i> <hr>
+                               Call Directly<br>
+                               <i>(+95)9894904577</i> <hr>
+                               Address<br>
+                               <i>631/ 5E, Pyay Road, Kamayut Township, Junction of Pyay Road & Inya Road </i> 
+                              </p>
+                        </div>
+              
+                        <div class="col-xs-6 col-md-3">
+                          <h6> Quick Links</h6>
+                          <ul class="footer-links">
+                            <li><a href=".html">Terms & Conditions</a></li>
+                            <li><a href="Privacy policy.html">Privacy-policy</a></li>
+                            <li><a href=".html">View Courses</a></li>
+                            <li><a href="Sitemap.html">Sitemap</a></li>
+                            <li><a href=".html">Success Stories</a></li>
+                          </ul>
+                        </div>
+              
+                        <div class="col-xs-6 col-md-3">
+                          <h6>Recommended Courses</h6>
+            
+                          <div id="photos">
+                            <ul id="photo-gallery">
+                              <li>
+                                
+                                <a href="#">
+                                  <img height="46" src="https://happycoding.io/tutorials/html/images/html-3.png">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46" src="https://img.favpng.com/25/3/3/css3-cascading-style-sheets-logo-html-png-favpng-smuBT0aP7P89Uste6DbQnA8sx.jpg"></a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46" src="https://images7.alphacoders.com/486/thumb-350-486291.jpg">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46" src="https://images7.alphacoders.com/679/thumb-1920-679140.png">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46" src="https://wallpapercave.com/wp/wp1828904.png">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46"src="data:image/png;base64,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">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-8 col-sm-6 col-xs-12">
+                        </div>
+              
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div id="social"><a class="facebookBtn smGlobalBtn" href="https://web.facebook.com/?_rdc=1&_rdr" ></a>
+                              <a class="twitterBtn smGlobalBtn" href="https://twitter.com/login" ></a>
+                              <a class="googleplusBtn smGlobalBtn" href="https://google.com" ></a>
+                              <a class="linkedinBtn smGlobalBtn" href="https://linkedin.com" ></a>
+                              <a class="pinterestBtn smGlobalBtn" href="https://pinterest.com" ></a>
+                              <a class="tumblrBtn smGlobalBtn" href="https://tumblr.com" ></a>
+                          </div>
+                      
+                      </div>
+                      </div>
+                    </div>
+              </footer>
+
+
+
+<script nonce="RWC6rAC2I95bEh0VybFqnw==">
+    //<![CDATA[
+          //function to fix height of iframe!
+          var calcHeight = function() {
+            var headerDimensions = $('.preview__header').height();
+            $('.full-screen-preview__frame').height($(window).height() - headerDimensions);
+          }
+    
+          $(document).ready(function() {
+            calcHeight();
+          });
+    
+          $(window).resize(function() {
+            calcHeight();
+          }).load(function() {
+            calcHeight();
+          });
+    
+    //]]>
+
+    $(document).ready(function() {
+
+$.get("http://ipinfo.io", function(response) {
+  var cor = response.loc.split(',');
+  var lat = cor[0];
+  var lon = cor[1];
+  var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=metric" + "&APPID=3695e5e886e4a1b016cf201000ec807e";
+
+  $.getJSON(weatherUrl, function(result) {
+    $("#temp").text(Math.round( result.main.temp * 10) / 10 + " C");
+    $('#weathericon').prepend('<img src="http://openweathermap.org/img/w/' + result.weather[0].icon + '.png" alt="weather icon class="img-responsive" />');
+
+    switch (result.weather[0].main) {
+      case 'Clear':
+        $("body").css("background-image", 'url("http://www.dream-wallpaper.com/free-wallpaper/nature-wallpaper/clear-water-and-blue-sky-2-wallpaper/1920x1200/free-wallpaper-15.jpg")');
+        break;
+      case 'Clouds':
+        $("body").css("background-image", 'url("http://wallpaper-download.net/wallpapers/random-wallpapers-clouds-background-wallpaper-34665.jpg")');
+        break;
+      case 'Rain':
+        $("body").css("background-image",  'url("http://4hdwallpapers.com/wp-content/uploads/2013/04/Rain-Background-1024x640.jpg")');
+        break;
+      case 'Snow': 
+         $("body").css("background-image",  'url("http://7-themes.com/data_images/out/53/6951192-snow-background-1658.jpg")');
+        break;
+      case 'Extreme':
+        $("body").css("background-image",  'url("http://images.fanpop.com/images/image_uploads/severe-weather-weather-250420_1024_768.jpg")');
+        break;
+      case 'Mist':
+        $("body").css("background-image",  'url("http://wallpaperswell.com/wallpapers/2013/08/Beautiful-Early-Morning-Mist.jpg")');
+        break;
+      default:
+        $("body").css("background-image",  'url("http://www.wallpapers9hd.com/wp-content/uploads/2015/05/hd_nature_background_wallpapers_5.jpg")');
+    }
+    
+    $("#toggle").click(function(){
+  $('#temp').toggleClass('fahrenheit');
+  if($('#temp').is(".fahrenheit")){
+    $('#temp').text(CToF(result.main.temp) + " F");
+  }
+  else{
+    $('#temp').text(Math.round( result.main.temp * 10) / 10 + " C");
+  }
+});
+    
+  });
+  
+
+}, "jsonp");
+
+function CToF(celcius) {
+celcius = celcius * 1.8 + 32
+return Math.round( celcius * 10) / 10;
+}
+
+});
+
+$( function() {
+    $( "#tabs" ).tabs();
+  } );
+
+
+
+
+  jQuery(document).ready(function($){
+	//open/close mega-navigation
+	$('.cd-dropdown-trigger').on('click', function(event){
+		event.preventDefault();
+		toggleNav();
+	});
+
+	//close meganavigation
+	$('.cd-dropdown .cd-close').on('click', function(event){
+		event.preventDefault();
+		toggleNav();
+	});
+
+	//on mobile - open submenu
+	$('.has-children').children('a').on('click', function(event){
+		//prevent default clicking on direct children of .has-children 
+		event.preventDefault();
+		var selected = $(this);
+		selected.next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('move-out');
+	});
+
+	//on desktop - differentiate between a user trying to hover over a dropdown item vs trying to navigate into a submenu's contents
+	var submenuDirection = ( !$('.cd-dropdown-wrapper').hasClass('open-to-left') ) ? 'right' : 'left';
+	$('.cd-dropdown-content').menuAim({
+        activate: function(row) {
+        	$(row).children().addClass('is-active').removeClass('fade-out');
+        	if( $('.cd-dropdown-content .fade-in').length == 0 ) $(row).children('ul').addClass('fade-in');
+        },
+        deactivate: function(row) {
+        	$(row).children().removeClass('is-active');
+        	if( $('li.has-children:hover').length == 0 || $('li.has-children:hover').is($(row)) ) {
+        		$('.cd-dropdown-content').find('.fade-in').removeClass('fade-in');
+        		$(row).children('ul').addClass('fade-out')
+        	}
+        },
+        exitMenu: function() {
+        	$('.cd-dropdown-content').find('.is-active').removeClass('is-active');
+        	return true;
+        },
+        submenuDirection: submenuDirection,
+    });
+
+	//submenu items - go back link
+	$('.go-back').on('click', function(){
+		var selected = $(this),
+			visibleNav = $(this).parent('ul').parent('.has-children').parent('ul');
+		selected.parent('ul').addClass('is-hidden').parent('.has-children').parent('ul').removeClass('move-out');
+	}); 
+
+	function toggleNav(){
+		var navIsVisible = ( !$('.cd-dropdown').hasClass('dropdown-is-active') ) ? true : false;
+		$('.cd-dropdown').toggleClass('dropdown-is-active', navIsVisible);
+		$('.cd-dropdown-trigger').toggleClass('dropdown-is-active', navIsVisible);
+		if( !navIsVisible ) {
+			$('.cd-dropdown').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+				$('.has-children ul').addClass('is-hidden');
+				$('.move-out').removeClass('move-out');
+				$('.is-active').removeClass('is-active');
+			});	
+		}
+	}
+
+	//IE9 placeholder fallback
+	//credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
+	if(!Modernizr.input.placeholder){
+		$('[placeholder]').focus(function() {
+			var input = $(this);
+			if (input.val() == input.attr('placeholder')) {
+				input.val('');
+		  	}
+		}).blur(function() {
+		 	var input = $(this);
+		  	if (input.val() == '' || input.val() == input.attr('placeholder')) {
+				input.val(input.attr('placeholder'));
+		  	}
+		}).blur();
+		$('[placeholder]').parents('form').submit(function() {
+		  	$(this).find('[placeholder]').each(function() {
+				var input = $(this);
+				if (input.val() == input.attr('placeholder')) {
+			 		input.val('');
+				}
+		  	})
+		});
+	}
+});
+
+/**
+ * menu-aim is a jQuery plugin for dropdown menus that can differentiate
+ * between a user trying hover over a dropdown item vs trying to navigate into
+ * a submenu's contents.
+ *
+ * menu-aim assumes that you have are using a menu with submenus that expand
+ * to the menu's right. It will fire events when the user's mouse enters a new
+ * dropdown item *and* when that item is being intentionally hovered over.
+ *
+ * __________________________
+ * | Monkeys  >|   Gorilla  |
+ * | Gorillas >|   Content  |
+ * | Chimps   >|   Here     |
+ * |___________|____________|
+ *
+ * In the above example, "Gorillas" is selected and its submenu content is
+ * being shown on the right. Imagine that the user's cursor is hovering over
+ * "Gorillas." When they move their mouse into the "Gorilla Content" area, they
+ * may briefly hover over "Chimps." This shouldn't close the "Gorilla Content"
+ * area.
+ *
+ * This problem is normally solved using timeouts and delays. menu-aim tries to
+ * solve this by detecting the direction of the user's mouse movement. This can
+ * make for quicker transitions when navigating up and down the menu. The
+ * experience is hopefully similar to amazon.com/'s "Shop by Department"
+ * dropdown.
+ *
+ * Use like so:
+ *
+ *      $("#menu").menuAim({
+ *          activate: $.noop,  // fired on row activation
+ *          deactivate: $.noop  // fired on row deactivation
+ *      });
+ *
+ *  ...to receive events when a menu's row has been purposefully (de)activated.
+ *
+ * The following options can be passed to menuAim. All functions execute with
+ * the relevant row's HTML element as the execution context ('this'):
+ *
+ *      .menuAim({
+ *          // Function to call when a row is purposefully activated. Use this
+ *          // to show a submenu's content for the activated row.
+ *          activate: function() {},
+ *
+ *          // Function to call when a row is deactivated.
+ *          deactivate: function() {},
+ *
+ *          // Function to call when mouse enters a menu row. Entering a row
+ *          // does not mean the row has been activated, as the user may be
+ *          // mousing over to a submenu.
+ *          enter: function() {},
+ *
+ *          // Function to call when mouse exits a menu row.
+ *          exit: function() {},
+ *
+ *          // Selector for identifying which elements in the menu are rows
+ *          // that can trigger the above events. Defaults to "> li".
+ *          rowSelector: "> li",
+ *
+ *          // You may have some menu rows that aren't submenus and therefore
+ *          // shouldn't ever need to "activate." If so, filter submenu rows w/
+ *          // this selector. Defaults to "*" (all elements).
+ *          submenuSelector: "*",
+ *
+ *          // Direction the submenu opens relative to the main menu. Can be
+ *          // left, right, above, or below. Defaults to "right".
+ *          submenuDirection: "right"
+ *      });
+ *
+ * https://github.com/kamens/jQuery-menu-aim
+ * MIT License
+*/
+(function($) {
+
+    $.fn.menuAim = function(opts) {
+        // Initialize menu-aim for all elements in jQuery collection
+        this.each(function() {
+            init.call(this, opts);
+        });
+
+        return this;
+    };
+
+    function init(opts) {
+        var $menu = $(this),
+            activeRow = null,
+            mouseLocs = [],
+            lastDelayLoc = null,
+            timeoutId = null,
+            options = $.extend({
+                rowSelector: "> li",
+                submenuSelector: "*",
+                submenuDirection: "right",
+                tolerance: 75,  // bigger = more forgivey when entering submenu
+                enter: $.noop,
+                exit: $.noop,
+                activate: $.noop,
+                deactivate: $.noop,
+                exitMenu: $.noop
+            }, opts);
+
+        var MOUSE_LOCS_TRACKED = 3,  // number of past mouse locations to track
+            DELAY = 300;  // ms delay when user appears to be entering submenu
+
+        /**
+         * Keep track of the last few locations of the mouse.
+         */
+        var mousemoveDocument = function(e) {
+                mouseLocs.push({x: e.pageX, y: e.pageY});
+
+                if (mouseLocs.length > MOUSE_LOCS_TRACKED) {
+                    mouseLocs.shift();
+                }
+            };
+
+        /**
+         * Cancel possible row activations when leaving the menu entirely
+         */
+        var mouseleaveMenu = function() {
+                if (timeoutId) {
+                    clearTimeout(timeoutId);
+                }
+
+                // If exitMenu is supplied and returns true, deactivate the
+                // currently active row on menu exit.
+                if (options.exitMenu(this)) {
+                    if (activeRow) {
+                        options.deactivate(activeRow);
+                    }
+
+                    activeRow = null;
+                }
+            };
+
+        /**
+         * Trigger a possible row activation whenever entering a new row.
+         */
+        var mouseenterRow = function() {
+                if (timeoutId) {
+                    // Cancel any previous activation delays
+                    clearTimeout(timeoutId);
+                }
+
+                options.enter(this);
+                possiblyActivate(this);
+            },
+            mouseleaveRow = function() {
+                options.exit(this);
+            };
+
+        /*
+         * Immediately activate a row if the user clicks on it.
+         */
+        var clickRow = function() {
+                activate(this);
+            };
+
+        /**
+         * Activate a menu row.
+         */
+        var activate = function(row) {
+                if (row == activeRow) {
+                    return;
+                }
+
+                if (activeRow) {
+                    options.deactivate(activeRow);
+                }
+
+                options.activate(row);
+                activeRow = row;
+            };
+
+        /**
+         * Possibly activate a menu row. If mouse movement indicates that we
+         * shouldn't activate yet because user may be trying to enter
+         * a submenu's content, then delay and check again later.
+         */
+        var possiblyActivate = function(row) {
+                var delay = activationDelay();
+
+                if (delay) {
+                    timeoutId = setTimeout(function() {
+                        possiblyActivate(row);
+                    }, delay);
+                } else {
+                    activate(row);
+                }
+            };
+
+        /**
+         * Return the amount of time that should be used as a delay before the
+         * currently hovered row is activated.
+         *
+         * Returns 0 if the activation should happen immediately. Otherwise,
+         * returns the number of milliseconds that should be delayed before
+         * checking again to see if the row should be activated.
+         */
+        var activationDelay = function() {
+                if (!activeRow || !$(activeRow).is(options.submenuSelector)) {
+                    // If there is no other submenu row already active, then
+                    // go ahead and activate immediately.
+                    return 0;
+                }
+
+                var offset = $menu.offset(),
+                    upperLeft = {
+                        x: offset.left,
+                        y: offset.top - options.tolerance
+                    },
+                    upperRight = {
+                        x: offset.left + $menu.outerWidth(),
+                        y: upperLeft.y
+                    },
+                    lowerLeft = {
+                        x: offset.left,
+                        y: offset.top + $menu.outerHeight() + options.tolerance
+                    },
+                    lowerRight = {
+                        x: offset.left + $menu.outerWidth(),
+                        y: lowerLeft.y
+                    },
+                    loc = mouseLocs[mouseLocs.length - 1],
+                    prevLoc = mouseLocs[0];
+
+                if (!loc) {
+                    return 0;
+                }
+
+                if (!prevLoc) {
+                    prevLoc = loc;
+                }
+
+                if (prevLoc.x < offset.left || prevLoc.x > lowerRight.x ||
+                    prevLoc.y < offset.top || prevLoc.y > lowerRight.y) {
+                    // If the previous mouse location was outside of the entire
+                    // menu's bounds, immediately activate.
+                    return 0;
+                }
+
+                if (lastDelayLoc &&
+                        loc.x == lastDelayLoc.x && loc.y == lastDelayLoc.y) {
+                    // If the mouse hasn't moved since the last time we checked
+                    // for activation status, immediately activate.
+                    return 0;
+                }
+
+                // Detect if the user is moving towards the currently activated
+                // submenu.
+                //
+                // If the mouse is heading relatively clearly towards
+                // the submenu's content, we should wait and give the user more
+                // time before activating a new row. If the mouse is heading
+                // elsewhere, we can immediately activate a new row.
+                //
+                // We detect this by calculating the slope formed between the
+                // current mouse location and the upper/lower right points of
+                // the menu. We do the same for the previous mouse location.
+                // If the current mouse location's slopes are
+                // increasing/decreasing appropriately compared to the
+                // previous's, we know the user is moving toward the submenu.
+                //
+                // Note that since the y-axis increases as the cursor moves
+                // down the screen, we are looking for the slope between the
+                // cursor and the upper right corner to decrease over time, not
+                // increase (somewhat counterintuitively).
+                function slope(a, b) {
+                    return (b.y - a.y) / (b.x - a.x);
+                };
+
+                var decreasingCorner = upperRight,
+                    increasingCorner = lowerRight;
+
+                // Our expectations for decreasing or increasing slope values
+                // depends on which direction the submenu opens relative to the
+                // main menu. By default, if the menu opens on the right, we
+                // expect the slope between the cursor and the upper right
+                // corner to decrease over time, as explained above. If the
+                // submenu opens in a different direction, we change our slope
+                // expectations.
+                if (options.submenuDirection == "left") {
+                    decreasingCorner = lowerLeft;
+                    increasingCorner = upperLeft;
+                } else if (options.submenuDirection == "below") {
+                    decreasingCorner = lowerRight;
+                    increasingCorner = lowerLeft;
+                } else if (options.submenuDirection == "above") {
+                    decreasingCorner = upperLeft;
+                    increasingCorner = upperRight;
+                }
+
+                var decreasingSlope = slope(loc, decreasingCorner),
+                    increasingSlope = slope(loc, increasingCorner),
+                    prevDecreasingSlope = slope(prevLoc, decreasingCorner),
+                    prevIncreasingSlope = slope(prevLoc, increasingCorner);
+
+                if (decreasingSlope < prevDecreasingSlope &&
+                        increasingSlope > prevIncreasingSlope) {
+                    // Mouse is moving from previous location towards the
+                    // currently activated submenu. Delay before activating a
+                    // new menu row, because user may be moving into submenu.
+                    lastDelayLoc = loc;
+                    return DELAY;
+                }
+
+                lastDelayLoc = null;
+                return 0;
+            };
+
+        /**
+         * Hook up initial menu events
+         */
+        $menu
+            .mouseleave(mouseleaveMenu)
+            .find(options.rowSelector)
+                .mouseenter(mouseenterRow)
+                .mouseleave(mouseleaveRow)
+                .click(clickRow);
+
+        $(document).mousemove(mousemoveDocument);
+
+    };
+})(jQuery);
+
+
+
+
+var Modal = (function() {
+
+var trigger = $qsa('.modal__trigger'); // what you click to activate the modal
+var modals = $qsa('.modal'); // the entire modal (takes up entire window)
+var modalsbg = $qsa('.modal__bg'); // the entire modal (takes up entire window)
+var content = $qsa('.modal__content'); // the inner content of the modal
+var closers = $qsa('.modal__close'); // an element used to close the modal
+var w = window;
+var isOpen = false;
+var contentDelay = 400; // duration after you click the button and wait for the content to show
+var len = trigger.length;
+
+// make it easier for yourself by not having to type as much to select an element
+function $qsa(el) {
+  return document.querySelectorAll(el);
+}
+
+var getId = function(event) {
+
+  event.preventDefault();
+  var self = this;
+  // get the value of the data-modal attribute from the button
+  var modalId = self.dataset.modal;
+  var len = modalId.length;
+  // remove the '#' from the string
+  var modalIdTrimmed = modalId.substring(1, len);
+  // select the modal we want to activate
+  var modal = document.getElementById(modalIdTrimmed);
+  // execute function that creates the temporary expanding div
+  makeDiv(self, modal);
+};
+
+var makeDiv = function(self, modal) {
+
+  var fakediv = document.getElementById('modal__temp');
+
+  /**
+   * if there isn't a 'fakediv', create one and append it to the button that was
+   * clicked. after that execute the function 'moveTrig' which handles the animations.
+   */
+
+  if (fakediv === null) {
+    var div = document.createElement('div');
+    div.id = 'modal__temp';
+    self.appendChild(div);
+    moveTrig(self, modal, div);
+  }
+};
+
+var moveTrig = function(trig, modal, div) {
+  var trigProps = trig.getBoundingClientRect();
+  var m = modal;
+  var mProps = m.querySelector('.modal__content').getBoundingClientRect();
+  var transX, transY, scaleX, scaleY;
+  var xc = w.innerWidth / 2;
+  var yc = w.innerHeight / 2;
+
+  // this class increases z-index value so the button goes overtop the other buttons
+  trig.classList.add('modal__trigger--active');
+
+  // these values are used for scale the temporary div to the same size as the modal
+  scaleX = mProps.width / trigProps.width;
+  scaleY = mProps.height / trigProps.height;
+
+  scaleX = scaleX.toFixed(3); // round to 3 decimal places
+  scaleY = scaleY.toFixed(3);
+
+
+  // these values are used to move the button to the center of the window
+  transX = Math.round(xc - trigProps.left - trigProps.width / 2);
+  transY = Math.round(yc - trigProps.top - trigProps.height / 2);
+
+  // if the modal is aligned to the top then move the button to the center-y of the modal instead of the window
+  if (m.classList.contains('modal--align-top')) {
+    transY = Math.round(mProps.height / 2 + mProps.top - trigProps.top - trigProps.height / 2);
+  }
+
+
+  // translate button to center of screen
+  trig.style.transform = 'translate(' + transX + 'px, ' + transY + 'px)';
+  trig.style.webkitTransform = 'translate(' + transX + 'px, ' + transY + 'px)';
+  // expand temporary div to the same size as the modal
+  div.style.transform = 'scale(' + scaleX + ',' + scaleY + ')';
+  div.style.webkitTransform = 'scale(' + scaleX + ',' + scaleY + ')';
+
+
+  window.setTimeout(function() {
+    window.requestAnimationFrame(function() {
+      open(m, div);
+    });
+  }, contentDelay);
+
+};
+
+var open = function(m, div) {
+
+  if (!isOpen) {
+    // select the content inside the modal
+    var content = m.querySelector('.modal__content');
+    // reveal the modal
+    m.classList.add('modal--active');
+    // reveal the modal content
+    content.classList.add('modal__content--active');
+
+    /**
+     * when the modal content is finished transitioning, fadeout the temporary
+     * expanding div so when the window resizes it isn't visible ( it doesn't
+     * move with the window).
+     */
+
+    content.addEventListener('transitionend', hideDiv, false);
+
+    isOpen = true;
+  }
+
+  function hideDiv() {
+    // fadeout div so that it can't be seen when the window is resized
+    div.style.opacity = '0';
+    content.removeEventListener('transitionend', hideDiv, false);
+  }
+};
+
+var close = function(event) {
+
+  event.preventDefault();
+  event.stopImmediatePropagation();
+
+  var target = event.target;
+  var div = document.getElementById('modal__temp');
+
+  /**
+   * make sure the modal__bg or modal__close was clicked, we don't want to be able to click
+   * inside the modal and have it close.
+   */
+
+  if (isOpen && target.classList.contains('modal__bg') || target.classList.contains('modal__close')) {
+
+    // make the hidden div visible again and remove the transforms so it scales back to its original size
+    div.style.opacity = '1';
+    div.removeAttribute('style');
+
+    /**
+    * iterate through the modals and modal contents and triggers to remove their active classes.
+    * remove the inline css from the trigger to move it back into its original position.
+    */
+
+    for (var i = 0; i < len; i++) {
+      modals[i].classList.remove('modal--active');
+      content[i].classList.remove('modal__content--active');
+      trigger[i].style.transform = 'none';
+      trigger[i].style.webkitTransform = 'none';
+      trigger[i].classList.remove('modal__trigger--active');
+    }
+
+    // when the temporary div is opacity:1 again, we want to remove it from the dom
+    div.addEventListener('transitionend', removeDiv, false);
+
+    isOpen = false;
+
+  }
+
+  function removeDiv() {
+    setTimeout(function() {
+      window.requestAnimationFrame(function() {
+        // remove the temp div from the dom with a slight delay so the animation looks good
+        div.remove();
+      });
+    }, contentDelay - 50);
+  }
+
+};
+
+var bindActions = function() {
+  for (var i = 0; i < len; i++) {
+    trigger[i].addEventListener('click', getId, false);
+    closers[i].addEventListener('click', close, false);
+    modalsbg[i].addEventListener('click', close, false);
+  }
+};
+
+var init = function() {
+  bindActions();
+};
+
+return {
+  init: init
+};
+
+}());
+
+Modal.init();
+    </script>
+
+    
+
+
+ </body>
+
+</html>

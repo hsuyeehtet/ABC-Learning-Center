@@ -1,0 +1,1614 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-
+UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>ABC Leranig Center</title>
+<link rel="icon" href="book.png">
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> -->
+  
+
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="javas.js"></script>
+</head>
+
+    <style>
+
+.card-group{
+width: 100%;
+margin: auto;
+padding:initial;
+}
+
+body {
+  background-color:	#ffffff;
+  font: bold;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    font-family: 'Abel', serif;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.center-block {float: none !important}
+h1 {
+    margin-top: 4cm;
+    color:#010038;
+    font-weight: normal;
+    transition: .3s;
+}
+p {
+  font-family: 'Abel', serif;
+    font-weight: 400;
+  margin: 0;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+ * {
+	 box-sizing: inherit;
+	 transition-property: all;
+	 transition-duration: 0.6s;
+	 transition-timing-function: ease;
+}
+
+ .buttons {
+	 display: flex;
+	 flex-direction: column;
+	 height: 100%;
+	 justify-content: center;
+	 text-align: center;
+    width: 100%;
+
+}
+
+ @media (min-width: 100%) {
+	 .container {
+    max-width: 100%;
+		 flex-direction: row;
+		 justify-content: space-between;
+	}
+ }
+
+ .btn {
+   
+	 color: #fff;
+	 cursor: pointer;
+	 font-size: 16px;
+	 font-weight: 400;
+	 line-height: 45px;
+	 margin: 0 0 2em;
+	 max-width: 160px;
+	 position: relative;
+	 text-decoration: none;
+	 text-transform: uppercase;
+     width: auto;
+}
+ @media (min-width:100%) {
+	 .btn {
+		 margin: 0 1em 2em;
+	}
+}
+ .btn:hover {
+	 text-decoration: none;
+}
+
+
+ .btn-2 {
+    background:	#2e279d;
+	 letter-spacing: 0;
+     text-decoration-color:black;
+}
+ .btn-2:hover, .btn-2:active {
+	 letter-spacing: 5px;
+}
+ .btn-2:after, .btn-2:before {
+	 backface-visibility: hidden;
+	 border: 1px solid rgb(255, 255, 255);
+	 bottom: 0px;
+	 content: " ";
+	 display: block;
+	 margin: 0 auto;
+	 position: relative;
+	 transition: all 280ms ease-in-out;
+	 width: 0;
+}
+ .btn-2:hover:after, .btn-2:hover:before {
+	 backface-visibility: hidden;
+	 border-color: #fff;
+	 transition: width 350ms ease-in-out;
+	 width: 100%;
+   text-decoration-color: rgb(236, 234, 230);
+}
+ .btn-2:hover:before {
+	 bottom: auto;
+	 top: 0;
+	 width: 70%;
+}
+ 
+
+  #row{
+    margin-top: 3cm;
+    
+  }
+
+  /* helpers/align.css */
+ .align {
+	 align-items: center;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+}
+/* helpers/grid.css */
+ :root {
+	 --gridMaxWidth: 20rem;
+	 --gridWidth: 100%;
+}
+ .grid {
+	 margin-left: auto;
+	 margin-right: auto;
+	 max-width: var(--gridMaxWidth);
+	 width: var(--gridWidth);
+}
+/* layout/base.css */
+ :root {
+	 --htmlFontSize: 100%;
+	 --bodyBackgroundColor: #61646d;
+	 --bodyColor: #000;
+	 --bodyFontFamily: 'Open Sans';
+	 --bodyFontFamilyFallback: sans-serif;
+	 --bodyFontSize: 0.875rem;
+	 --bodyFontWeight: 400;
+	 --bodyLineHeight: 1.5;
+}
+ *, *::before, *::after {
+	 box-sizing: inherit;
+}
+
+/* modules/form.css */
+ ::placeholder {
+	 color: #42454e;
+}
+ input {
+	 appearance: none;
+	 border: none;
+	 font: inherit;
+	 margin: 0;
+	 outline: 0;
+	 padding: 0;
+}
+ input[type="search"] {
+	 appearance: textfield;
+	 box-sizing: content-box;
+}
+ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+	 appearance: none;
+}
+ input[type="submit"] {
+	 cursor: pointer;
+}
+ .form__field {
+	 display: flex;
+	 flex-wrap: wrap;
+}
+ .form__input {
+	 flex-grow: 1;
+}
+/* modules/search.css */
+ :root {
+	 --searchBackgroundColor:#2e279d ;
+	 --searchBorderRadius: 0.125rem;
+	 --searchFontSize: 0.75rem;
+	 --searchPadding: 0.5rem;
+	 --searchInputBorderRadius: 0.125rem;
+	 --searchInputSearchBackgroundColor: #fff;
+	 --searchInputSearchColor: #42454e;
+	 --searchInputSearchPaddingHorizontal: 0.5rem;
+	 --searchInputSearchPaddingVertical: 0.375rem;
+	 --searchInputButtonBackgroundColor:   #BBE1FA;
+	 --searchInputButtonColor: black;
+	 --searchInputButtonFontWeight: bold;
+	 --searchInputButtonPaddingHorizontal: 0.625rem;
+	 --searchInputButtonPaddingVertical: 0.375rem;
+	 --searchInputButtonHoverBackgroundColor: grey;
+}
+ .search {
+	 background-color: var(--searchBackgroundColor);
+	 border-radius: var(--searchBorderRadius);
+	 font-size: var(--searchFontSize);
+	 padding: var(--searchPadding);
+}
+ .search input[type="search"], .search input[type="submit"] {
+	 border-radius: var(--searchInputBorderRadius);
+}
+ .search input[type="search"] {
+	 background-color: var(--searchInputSearchBackgroundColor);
+	 color: var(--searchInputSearchColor);
+	 padding: var(--searchInputSearchPaddingVertical) var(--searchInputSearchPaddingHorizontal);
+}
+ .search input[type="submit"] {
+	 background-color: var(--searchInputButtonBackgroundColor);
+	 color: var(--searchInputButtonColor);
+	 font-weight: var(--searchInputButtonFontWeight);
+	 margin-left: 0.5rem;
+	 padding: var(--searchInputButtonPaddingVertical) var(--searchInputButtonPaddingHorizontal);
+}
+ .search input[type="submit"]:focus, .search input[type="submit"]:hover {
+	 background-color: var(--searchInputButtonHoverBackgroundColor);
+}
+  .navbar-expand-lg{
+    width: 100%;
+  }
+
+ .container {
+   width: 100%;
+	 padding: 0;
+}
+
+ .blocks-menus {
+	 background: white;
+	 padding: 20px 10px;
+	 text-align: center;
+}
+ .blocks-menus .primary-menus {
+	 display: inline-block;
+	 margin: 0;
+	 padding: 0;
+}
+ .blocks-menus .primary-menus i {
+	 padding: 0 10px;
+}
+ .blocks-menus .primary-menus li {
+	 list-style: none;
+	 float: left;
+	 padding: 0 10px;
+}
+ .blocks-menus .primary-menus li a {
+	 text-decoration: none;
+   font-family: 'Abel', serif;
+	 text-transform: uppercase;
+	 font-weight: normal;
+	 color: #303030;
+	 font-size: 14px;
+	 font-weight: 600;
+	 transition: all 0.2s ease-in-out;
+	 -webkit-transition: all 0.2s ease-in-out;
+	 -moz-transition: all 0.2s ease-in-out;
+}
+ .blocks-menus .primary-menus li a:hover {
+	 color: gray;
+}
+ .blocks-menus .menus-dropdown:hover .dropdown {
+	 visibility: visible;
+	 opacity: 1;
+}
+ .blocks-menus .dropdown {
+	 position: absolute;
+	 opacity: 0;
+	 visibility: hidden;
+	 border: 1px solid #ececec;
+	 padding: 10px 30px;
+	 z-index: 999;
+	 background: white;
+	 width: 100%;
+	 margin-top: 10px;
+	 transition: all 0.2s ease-in-out;
+	 -webkit-transition: all 0.2s ease-in-out;
+	 -moz-transition: all 0.2s ease-in-out;
+}
+ .blocks-menus .dropdown li {
+	 line-height: 30px;
+	 float: none;
+}
+ .blocks-menus .dropdown a {
+	 font-size: 11px;
+	 font-weight: normal;
+}
+ .blocks-menus .menus-dropdown {
+	 position: relative;
+}
+ .blocks-menus .menus-megamenus:hover .mega-menus {
+	 opacity: 1;
+	 visibility: visible;
+}
+ .blocks-menus .mega-menus {
+	 opacity: 0;
+	 visibility: hidden;
+	 position: absolute;
+	 left: 0;
+	 right: 0;
+	 margin: 15px auto;
+	 width: 80%;
+	 border: 1px solid #ececec;
+	 padding: 0 15px;
+	 min-height: 330px;
+	 transition: all 0.2s ease-in-out;
+	 -webkit-transition: all 0.2s ease-in-out;
+	 -moz-transition: all 0.2s ease-in-out;
+	 background-size: 100%;
+	 background-repeat: no-repeat;
+}
+ .blocks-menus .mega-menus li {
+	 float: none;
+	 text-align: left;
+	 padding: 0;
+}
+ .blocks-menus .section {
+	 float: left;
+	 margin: 35px 15px;
+}
+ .blocks-menus .section h3 {
+  font-family: 'Abel', serif;
+	 position: relative;
+	 font-size: 16px;
+	 padding: 10px 0;
+	 text-transform: uppercase;
+	 border-bottom: 1px solid #d6d6d6;
+}
+
+.card{
+    margin-top: 5cm;
+    text-align: center;
+    border-radius: round;
+    color:black;
+}
+.card-text{
+    color:black;
+
+    text-align: left;
+}
+button
+{
+  
+  border: 2px solid black;
+  background: none;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition:  all 0.3s;
+  -moz-transition:  all 0.3s;
+  transition:  all 0.3s;
+
+}
+
+.btnn{
+  font-family: 'Abel', serif;
+	 flex-direction: column;
+	 justify-content: center;
+	 text-align: center;
+	 width: 100%;
+}
+
+.btn-1::before,
+.btn-1::after
+{
+   content: "";
+  background:black;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width:0;
+  height: 100%;
+  -webkit-transition:  all 0.3s;
+  -moz-transition:  all 0.3s;
+  transition:  all 0.3s;
+}
+button:hover{
+  color: white;
+}
+.btn-1:hover:before
+{
+  width: 100%;
+}
+
+.row {
+  width: 100% ;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.site-footer
+{
+    margin-top: 1cm;
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer
+{
+  color:#BBE1FA;
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#BBE1FA;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #fff;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+      color: #cb2027;
+      background: #fff;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #3a5876;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: #3a5876;
+      background: #fff;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;  
+      background: #fff;
+}
+
+#photos {
+  opacity: .88;
+}
+
+#photos img {
+  width: 30%;
+  float: left;
+  display: block;
+  margin: 2px;
+}
+
+#photo-gallery{
+  list-style: none;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  max-width: 500px;
+
+}
+
+#overlay {
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#photos {
+  width: 100%;
+}
+
+#photo-gallery {
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+ * {
+	 box-sizing: border-box;
+	 font-weight: normal;
+}
+
+h1,h2,h3,h5,h4{
+  font-family: 'Abel', serif;
+    margin-left: 1cm;
+}
+li{
+  color: white;
+}
+span{
+  color: #26272b;
+}
+.icon{
+  margin-left: 0.5cm;
+  margin-top: 0.3cm;
+  margin-bottom: 0.5cm;
+}
+
+.tours.card-deck {
+	 margin: 0 auto;
+
+}
+ .tours .tour {
+	 min-width: 250px;
+   
+}
+ .tours .tour .tour-image {
+	 width: 100%;
+	 height: auto;
+}
+
+
+ .tours .tour .tour-title {
+	 font-weight: 500;
+}
+ .tours .tour .tour-description {
+	 font-weight: 300;
+}
+
+ 
+.rowr{
+  margin-top: -5cm;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="ABC.png" class="rounded" alt="logo"  height="80">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav mr-auto">
+            <li style="margin-right: 1cm; font-size: large;" class="nav-item active">
+              <a class="nav-link" href="#page1">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li style="margin-right: 1cm; font-size: large;" class="nav-item dropdown">
+              <a class="nav-link mr-sm-4 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="course1.html">HTML</a>
+                <a class="dropdown-item" href="course2.html">C++</a>
+                <a class="dropdown-item" href="#page6">Python</a>
+                <a class="dropdown-item" href="#page7">JavaScript</a>
+            </div>
+            </li>
+            <li style="margin-right: 1cm; font-size: large;" class="nav-item">
+              <a class="nav-link" href="#page2">Contact</a>
+            </li>
+            <li style="margin-right: 1cm; font-size: large;" class="nav-item">
+              <a class="nav-link" href="#page3">About</a>
+            </li>
+          </ul>
+
+         
+
+<div id="dvProdList"> </div>
+
+<div class="clear"></div>
+
+        </div>
+    </nav>
+
+<div id="pageContent">
+    <h1 class="text-center">Find Courses Online</h1>
+    <br>
+    <br>
+    <div class="row">
+        <section class="buttons">
+
+          <div class="container">
+
+            <!--svg hover inspired by https://codepen.io/karimbalaa/pen/qERbBY?editors=110 -->
+            <!--End of Button 1 -->
+            
+            <a href="#page4" class="btn btn-2">Register</a> 
+            <!--End of Button 2 -->
+            
+            <a href="" class="btn btn-2">Sign in</a> 
+            <!--End of Button 3 -->
+            
+
+            <div class="grid">
+
+              <form action="" method="get" class="search">
+          
+                <div class="form__field">
+                  <input type="search" name="search" placeholder="What are you looking for?" class="form__input">
+                  <input type="submit" value="Search" class="button">
+                </div>
+          
+              </form>
+          
+            </div>
+            
+
+
+          </div>
+        </section>
+
+        <div class="card-group">
+            <div class="card">
+
+              <div class="card-body">
+                <h5 class="card-title"> BEST COURSE ONLINE</h5>
+                <hr>
+                <p class="card-text">As a leading Web Production Company, we ensure that all your classes have a strong practical 
+                    focus and equip you with skills you need to succeed.</p>
+
+              </div>
+            </div>
+
+            <div class="card">
+
+              <div class="card-body">
+                <h5 class="card-title">WORLD CLASS GLOBLE CURRICULUM</h5>
+                <hr>
+                <p class="card-text">Being a member of the W3C, we ensure that you get the latest and most accurate curriculum
+                     to give you an edge over the global competition.</p>
+
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">OVER 25,000 SATISFIED GRADUATES</h5>
+                <hr>
+                <p class="card-text">Our branches in some of the major IT hubs in the world offers us insights into the astounding 
+                    developments in the Web. We aim to deliver this knowledge to our students.</p>
+
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="container" style="margin-top: 2cm;">
+      <h1 style="color: black; text-align: center; margin-bottom: 2cm; ">Our Courses</h1>
+        <div class="btnn">
+          <a href="#page12"><button style="margin-right: 2cm; width: 200px;" class="btn-1">HTML</button></a>
+          <a href="#page5"><button style="margin-right: 2cm; width: 200px;" class="btn-1">C++</button></a>
+          <a href="#page6"><button style="margin-right: 2cm; width: 200px;" class="btn-1">Python</button></a>
+          <a href="#page7"><button style="margin-right: 0.5cm; width: 200px;" class="btn-1">JavaScript</button></a>
+        </div>
+
+
+        <div  class="rowr py-5">
+          <div  class="card-deck tours">
+      <div style="border-color: white;" class="card mb-3 tour">
+        <img style="height: 180px;" class="card-img-top tour-image" src="https://images.squarespace-cdn.com/content/v1/5bc4383ff4755a0eb4634273/1560158058018-UIJ21UZIHAE3LHZBHTM9/ke17ZwdGBToddI8pDm48kOzY2HdBsXpWD8u55OOtj757gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ua8Q0Iqr6VBd1Xwoc9J4c2nkHT7qKYggIjwD0ALLXd2vXejQve6EWhtsEXNp5cp4uw/image-asset.jpeg" alt="Course 1">
+        <div class="card-body bg-white text-light tour-body text-center">
+          <h5 class="card-title tour-title" style="color: black;" class="text-center">HTML Foundation</h5>
+          <p class="card-text tour-description">Learn HTML & CSS From Scratch While Designing And Coding Your Own Project Step-by-step within 30 days with us.</p>
+          <p class="card-details">
+
+        </div>
+      </div>
+      <div style="border-color: white;" class="card mb-3 tour">
+        <img style="height: 180px;"  class="card-img-top tour-image" src="https://images.squarespace-cdn.com/content/v1/5bc4383ff4755a0eb4634273/1544242358041-RAB1PR397MGVHCQHS7D0/ke17ZwdGBToddI8pDm48kDrQ9tfdcvPUv7NgXGP4R2R7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0gmXcXvEVFTLbYX9CdVcGe4zwrosjp5YtnrvbmlM1LFKb7wNXE8lRZ0Z8l5PIsW3Vw/work-ready.jpg?format=2500w" alt="Course 2">
+        <div class="card-body bg-white text-light  tour-body text-center">
+          <h5 class="card-title tour-title" style="color: black;" class="text-center">C++</h5>
+          <p class="card-text tour-description">Learn C++ Programming with the best faculty in easiest manner with Industry benchmarked course and live projects.</p>
+          
+        </div>
+      </div>     
+      <div style="border-color: white;" class="card mb-3 tour">
+        <img style="height: 180px;" class="card-img-top tour-image" src="https://www.itprotoday.com/sites/itprotoday.com/files/styles/article_featured_retina/public/software-developer.jpg?itok=54yo1sMv" alt="Card image cap">
+        <div class="card-body bg-white text-light tour-body text-center">
+          <h5 class="card-title tour-title" style="color: black;" class="text-center">Python</h5>
+          <p class="card-text tour-description">Learn how to use PHP to develop better websites from a top-rated web development instructor.</p>
+        
+        </div>
+      </div>     
+      <div style="border-color: white;" class="card mb-3 tour">
+        <img style="height: 180px;" class="card-img-top tour-image" src="https://www.schoolofit.co.za/wp-content/uploads/2016/03/pexels-photo-640x393.jpg" alt="Card image cap">
+        <div class="card-body bg- text-light tour-body text-center">
+          <h5 class="card-title tour-title" style="color: black;" class="text-center">JavaScript</h5>
+          <p class="card-text tour-description">Learn the JavaScript fundamentals you'll need for front-end or back-end development. </p>
+          
+        </div>
+      </div>
+          </div>
+        </div>
+        
+    </div>
+
+</div>
+
+<div class="clear"></div><!-- Use clear to remove any floating elements -->
+
+
+                  <!-- Site footer -->
+              <footer class="site-footer">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-6">
+             
+                          <p class="text-justify">Email<br> 
+                               <i>hsuyeehtet351@gmail.com </i> <hr>
+                               Call Directly<br>
+                               <i>(+95)9894904577</i> <hr>
+                               Address<br>
+                               <i>631/ 5E, Pyay Road, Kamayut Township, Junction of Pyay Road & Inya Road </i> 
+                              </p>
+                        </div>
+              
+                        <div class="col-xs-6 col-md-3">
+                          <h6> Quick Links</h6>
+                          <ul class="footer-links">
+                            <li><a href=".html">Terms & Conditions</a></li>
+                            <li><a href="#page9">Privacy-policy</a></li>
+                            <li><a href=".html">View Courses</a></li>
+                            <li><a href="#page10">Sitemap</a></li>
+                            <li><a href=".html">Success Stories</a></li>
+                          </ul>
+                        </div>
+              
+                        <div class="col-xs-6 col-md-3">
+                          <h6>Recommended Courses</h6>
+            
+                          <div id="photos">
+                            <ul id="photo-gallery">
+                              <li>
+                                
+                                <a href="#">
+                                  <img height="46" src="https://happycoding.io/tutorials/html/images/html-3.png">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46" src="https://img.favpng.com/25/3/3/css3-cascading-style-sheets-logo-html-png-favpng-smuBT0aP7P89Uste6DbQnA8sx.jpg"></a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46" src="https://images7.alphacoders.com/486/thumb-350-486291.jpg">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46" src="https://images7.alphacoders.com/679/thumb-1920-679140.png">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46" src="https://wallpapercave.com/wp/wp1828904.png">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img height="46"src="data:image/png;base64,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">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-8 col-sm-6 col-xs-12">
+                        </div>
+              
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div id="social"><a class="facebookBtn smGlobalBtn" href="https://web.facebook.com/?_rdc=1&_rdr" ></a>
+                              <a class="twitterBtn smGlobalBtn" href="https://twitter.com/login" ></a>
+                              <a class="googleplusBtn smGlobalBtn" href="https://google.com" ></a>
+                              <a class="linkedinBtn smGlobalBtn" href="https://linkedin.com" ></a>
+                              <a class="pinterestBtn smGlobalBtn" href="https://pinterest.com" ></a>
+                              <a class="tumblrBtn smGlobalBtn" href="https://tumblr.com" ></a>
+                          </div>
+                      
+                      </div>
+                      </div>
+                    </div>
+              </footer>
+
+              <script nonce="RWC6rAC2I95bEh0VybFqnw==">
+                //<![CDATA[
+                      //function to fix height of iframe!
+                      var calcHeight = function() {
+                        var headerDimensions = $('.preview__header').height();
+                        $('.full-screen-preview__frame').height($(window).height() - headerDimensions);
+                      }
+                
+                      $(document).ready(function() {
+                        calcHeight();
+                      });
+                
+                      $(window).resize(function() {
+                        calcHeight();
+                      }).load(function() {
+                        calcHeight();
+                      });
+                
+                //]]>
+              
+                $(document).ready(function() {
+              
+              $.get("http://ipinfo.io", function(response) {
+              var cor = response.loc.split(',');
+              var lat = cor[0];
+              var lon = cor[1];
+              var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=metric" + "&APPID=3695e5e886e4a1b016cf201000ec807e";
+              
+              $.getJSON(weatherUrl, function(result) {
+                $("#temp").text(Math.round( result.main.temp * 10) / 10 + " C");
+                $('#weathericon').prepend('<img src="http://openweathermap.org/img/w/' + result.weather[0].icon + '.png" alt="weather icon class="img-responsive" />');
+              
+                switch (result.weather[0].main) {
+                  case 'Clear':
+                    $("body").css("background-image", 'url("http://www.dream-wallpaper.com/free-wallpaper/nature-wallpaper/clear-water-and-blue-sky-2-wallpaper/1920x1200/free-wallpaper-15.jpg")');
+                    break;
+                  case 'Clouds':
+                    $("body").css("background-image", 'url("http://wallpaper-download.net/wallpapers/random-wallpapers-clouds-background-wallpaper-34665.jpg")');
+                    break;
+                  case 'Rain':
+                    $("body").css("background-image",  'url("http://4hdwallpapers.com/wp-content/uploads/2013/04/Rain-Background-1024x640.jpg")');
+                    break;
+                  case 'Snow': 
+                     $("body").css("background-image",  'url("http://7-themes.com/data_images/out/53/6951192-snow-background-1658.jpg")');
+                    break;
+                  case 'Extreme':
+                    $("body").css("background-image",  'url("http://images.fanpop.com/images/image_uploads/severe-weather-weather-250420_1024_768.jpg")');
+                    break;
+                  case 'Mist':
+                    $("body").css("background-image",  'url("http://wallpaperswell.com/wallpapers/2013/08/Beautiful-Early-Morning-Mist.jpg")');
+                    break;
+                  default:
+                    $("body").css("background-image",  'url("http://www.wallpapers9hd.com/wp-content/uploads/2015/05/hd_nature_background_wallpapers_5.jpg")');
+                }
+                
+                $("#toggle").click(function(){
+              $('#temp').toggleClass('fahrenheit');
+              if($('#temp').is(".fahrenheit")){
+                $('#temp').text(CToF(result.main.temp) + " F");
+              }
+              else{
+                $('#temp').text(Math.round( result.main.temp * 10) / 10 + " C");
+              }
+              });
+                
+              });
+              
+              
+              }, "jsonp");
+              
+              function CToF(celcius) {
+              celcius = celcius * 1.8 + 32
+              return Math.round( celcius * 10) / 10;
+              }
+              
+              });
+              
+              $( function() {
+                $( "#tabs" ).tabs();
+              } );
+
+              jQuery(document).ready(function($){
+              //open/close mega-navigation
+              $('.cd-dropdown-trigger').on('click', function(event){
+                event.preventDefault();
+                toggleNav();
+              });
+              
+              //close meganavigation
+              $('.cd-dropdown .cd-close').on('click', function(event){
+                event.preventDefault();
+                toggleNav();
+              });
+              
+              //on mobile - open submenu
+              $('.has-children').children('a').on('click', function(event){
+                //prevent default clicking on direct children of .has-children 
+                event.preventDefault();
+                var selected = $(this);
+                selected.next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('move-out');
+              });
+              
+              //on desktop - differentiate between a user trying to hover over a dropdown item vs trying to navigate into a submenu's contents
+              var submenuDirection = ( !$('.cd-dropdown-wrapper').hasClass('open-to-left') ) ? 'right' : 'left';
+              $('.cd-dropdown-content').menuAim({
+                    activate: function(row) {
+                      $(row).children().addClass('is-active').removeClass('fade-out');
+                      if( $('.cd-dropdown-content .fade-in').length == 0 ) $(row).children('ul').addClass('fade-in');
+                    },
+                    deactivate: function(row) {
+                      $(row).children().removeClass('is-active');
+                      if( $('li.has-children:hover').length == 0 || $('li.has-children:hover').is($(row)) ) {
+                        $('.cd-dropdown-content').find('.fade-in').removeClass('fade-in');
+                        $(row).children('ul').addClass('fade-out')
+                      }
+                    },
+                    exitMenu: function() {
+                      $('.cd-dropdown-content').find('.is-active').removeClass('is-active');
+                      return true;
+                    },
+                    submenuDirection: submenuDirection,
+                });
+              
+              //submenu items - go back link
+              $('.go-back').on('click', function(){
+                var selected = $(this),
+                  visibleNav = $(this).parent('ul').parent('.has-children').parent('ul');
+                selected.parent('ul').addClass('is-hidden').parent('.has-children').parent('ul').removeClass('move-out');
+              }); 
+              
+              function toggleNav(){
+                var navIsVisible = ( !$('.cd-dropdown').hasClass('dropdown-is-active') ) ? true : false;
+                $('.cd-dropdown').toggleClass('dropdown-is-active', navIsVisible);
+                $('.cd-dropdown-trigger').toggleClass('dropdown-is-active', navIsVisible);
+                if( !navIsVisible ) {
+                  $('.cd-dropdown').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+                    $('.has-children ul').addClass('is-hidden');
+                    $('.move-out').removeClass('move-out');
+                    $('.is-active').removeClass('is-active');
+                  });	
+                }
+              }
+              
+              //IE9 placeholder fallback
+              //credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
+              if(!Modernizr.input.placeholder){
+                $('[placeholder]').focus(function() {
+                  var input = $(this);
+                  if (input.val() == input.attr('placeholder')) {
+                    input.val('');
+                    }
+                }).blur(function() {
+                   var input = $(this);
+                    if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                    input.val(input.attr('placeholder'));
+                    }
+                }).blur();
+                $('[placeholder]').parents('form').submit(function() {
+                    $(this).find('[placeholder]').each(function() {
+                    var input = $(this);
+                    if (input.val() == input.attr('placeholder')) {
+                       input.val('');
+                    }
+                    })
+                });
+              }
+              });
+              
+              (function($) {
+              
+                $.fn.menuAim = function(opts) {
+                    // Initialize menu-aim for all elements in jQuery collection
+                    this.each(function() {
+                        init.call(this, opts);
+                    });
+              
+                    return this;
+                };
+              
+                function init(opts) {
+                    var $menu = $(this),
+                        activeRow = null,
+                        mouseLocs = [],
+                        lastDelayLoc = null,
+                        timeoutId = null,
+                        options = $.extend({
+                            rowSelector: "> li",
+                            submenuSelector: "*",
+                            submenuDirection: "right",
+                            tolerance: 75,  // bigger = more forgivey when entering submenu
+                            enter: $.noop,
+                            exit: $.noop,
+                            activate: $.noop,
+                            deactivate: $.noop,
+                            exitMenu: $.noop
+                        }, opts);
+              
+                    var MOUSE_LOCS_TRACKED = 3,  // number of past mouse locations to track
+                        DELAY = 300;  // ms delay when user appears to be entering submenu
+              
+                    /**
+                     * Keep track of the last few locations of the mouse.
+                     */
+                    var mousemoveDocument = function(e) {
+                            mouseLocs.push({x: e.pageX, y: e.pageY});
+              
+                            if (mouseLocs.length > MOUSE_LOCS_TRACKED) {
+                                mouseLocs.shift();
+                            }
+                        };
+              
+                    /**
+                     * Cancel possible row activations when leaving the menu entirely
+                     */
+                    var mouseleaveMenu = function() {
+                            if (timeoutId) {
+                                clearTimeout(timeoutId);
+                            }
+              
+                            // If exitMenu is supplied and returns true, deactivate the
+                            // currently active row on menu exit.
+                            if (options.exitMenu(this)) {
+                                if (activeRow) {
+                                    options.deactivate(activeRow);
+                                }
+              
+                                activeRow = null;
+                            }
+                        };
+              
+                    /**
+                     * Trigger a possible row activation whenever entering a new row.
+                     */
+                    var mouseenterRow = function() {
+                            if (timeoutId) {
+                                // Cancel any previous activation delays
+                                clearTimeout(timeoutId);
+                            }
+              
+                            options.enter(this);
+                            possiblyActivate(this);
+                        },
+                        mouseleaveRow = function() {
+                            options.exit(this);
+                        };
+              
+                    /*
+                     * Immediately activate a row if the user clicks on it.
+                     */
+                    var clickRow = function() {
+                            activate(this);
+                        };
+              
+                    /**
+                     * Activate a menu row.
+                     */
+                    var activate = function(row) {
+                            if (row == activeRow) {
+                                return;
+                            }
+              
+                            if (activeRow) {
+                                options.deactivate(activeRow);
+                            }
+              
+                            options.activate(row);
+                            activeRow = row;
+                        };
+              
+                    /**
+                     * Possibly activate a menu row. If mouse movement indicates that we
+                     * shouldn't activate yet because user may be trying to enter
+                     * a submenu's content, then delay and check again later.
+                     */
+                    var possiblyActivate = function(row) {
+                            var delay = activationDelay();
+              
+                            if (delay) {
+                                timeoutId = setTimeout(function() {
+                                    possiblyActivate(row);
+                                }, delay);
+                            } else {
+                                activate(row);
+                            }
+                        };
+              
+                    var activationDelay = function() {
+                            if (!activeRow || !$(activeRow).is(options.submenuSelector)) {
+                                // If there is no other submenu row already active, then
+                                // go ahead and activate immediately.
+                                return 0;
+                            }
+              
+                            var offset = $menu.offset(),
+                                upperLeft = {
+                                    x: offset.left,
+                                    y: offset.top - options.tolerance
+                                },
+                                upperRight = {
+                                    x: offset.left + $menu.outerWidth(),
+                                    y: upperLeft.y
+                                },
+                                lowerLeft = {
+                                    x: offset.left,
+                                    y: offset.top + $menu.outerHeight() + options.tolerance
+                                },
+                                lowerRight = {
+                                    x: offset.left + $menu.outerWidth(),
+                                    y: lowerLeft.y
+                                },
+                                loc = mouseLocs[mouseLocs.length - 1],
+                                prevLoc = mouseLocs[0];
+              
+                            if (!loc) {
+                                return 0;
+                            }
+              
+                            if (!prevLoc) {
+                                prevLoc = loc;
+                            }
+              
+                            if (prevLoc.x < offset.left || prevLoc.x > lowerRight.x ||
+                                prevLoc.y < offset.top || prevLoc.y > lowerRight.y) {
+                                // If the previous mouse location was outside of the entire
+                                // menu's bounds, immediately activate.
+                                return 0;
+                            }
+              
+                            if (lastDelayLoc &&
+                                    loc.x == lastDelayLoc.x && loc.y == lastDelayLoc.y) {
+                                // If the mouse hasn't moved since the last time we checked
+                                // for activation status, immediately activate.
+                                return 0;
+                            }
+              
+              
+                            function slope(a, b) {
+                                return (b.y - a.y) / (b.x - a.x);
+                            };
+              
+                            var decreasingCorner = upperRight,
+                                increasingCorner = lowerRight;
+              
+                            // Our expectations for decreasing or increasing slope values
+                            // depends on which direction the submenu opens relative to the
+                            // main menu. By default, if the menu opens on the right, we
+                            // expect the slope between the cursor and the upper right
+                            // corner to decrease over time, as explained above. If the
+                            // submenu opens in a different direction, we change our slope
+                            // expectations.
+                            if (options.submenuDirection == "left") {
+                                decreasingCorner = lowerLeft;
+                                increasingCorner = upperLeft;
+                            } else if (options.submenuDirection == "below") {
+                                decreasingCorner = lowerRight;
+                                increasingCorner = lowerLeft;
+                            } else if (options.submenuDirection == "above") {
+                                decreasingCorner = upperLeft;
+                                increasingCorner = upperRight;
+                            }
+              
+                            var decreasingSlope = slope(loc, decreasingCorner),
+                                increasingSlope = slope(loc, increasingCorner),
+                                prevDecreasingSlope = slope(prevLoc, decreasingCorner),
+                                prevIncreasingSlope = slope(prevLoc, increasingCorner);
+              
+                            if (decreasingSlope < prevDecreasingSlope &&
+                                    increasingSlope > prevIncreasingSlope) {
+                                // Mouse is moving from previous location towards the
+                                // currently activated submenu. Delay before activating a
+                                // new menu row, because user may be moving into submenu.
+                                lastDelayLoc = loc;
+                                return DELAY;
+                            }
+              
+                            lastDelayLoc = null;
+                            return 0;
+                        };
+              
+                    /**
+                     * Hook up initial menu events
+                     */
+                    $menu
+                        .mouseleave(mouseleaveMenu)
+                        .find(options.rowSelector)
+                            .mouseenter(mouseenterRow)
+                            .mouseleave(mouseleaveRow)
+                            .click(clickRow);
+              
+                    $(document).mousemove(mousemoveDocument);
+              
+                };
+              })(jQuery);
+
+              var Modal = (function() {
+              
+              var trigger = $qsa('.modal__trigger'); // what you click to activate the modal
+              var modals = $qsa('.modal'); // the entire modal (takes up entire window)
+              var modalsbg = $qsa('.modal__bg'); // the entire modal (takes up entire window)
+              var content = $qsa('.modal__content'); // the inner content of the modal
+              var closers = $qsa('.modal__close'); // an element used to close the modal
+              var w = window;
+              var isOpen = false;
+              var contentDelay = 400; // duration after you click the button and wait for the content to show
+              var len = trigger.length;
+              
+              // make it easier for yourself by not having to type as much to select an element
+              function $qsa(el) {
+              return document.querySelectorAll(el);
+              }
+              
+              var getId = function(event) {
+              
+              event.preventDefault();
+              var self = this;
+              // get the value of the data-modal attribute from the button
+              var modalId = self.dataset.modal;
+              var len = modalId.length;
+              // remove the '#' from the string
+              var modalIdTrimmed = modalId.substring(1, len);
+              // select the modal we want to activate
+              var modal = document.getElementById(modalIdTrimmed);
+              // execute function that creates the temporary expanding div
+              makeDiv(self, modal);
+              };
+              
+              var makeDiv = function(self, modal) {
+              
+              var fakediv = document.getElementById('modal__temp');
+              
+              /**
+               * if there isn't a 'fakediv', create one and append it to the button that was
+               * clicked. after that execute the function 'moveTrig' which handles the animations.
+               */
+              
+              if (fakediv === null) {
+                var div = document.createElement('div');
+                div.id = 'modal__temp';
+                self.appendChild(div);
+                moveTrig(self, modal, div);
+              }
+              };
+              
+              var moveTrig = function(trig, modal, div) {
+              var trigProps = trig.getBoundingClientRect();
+              var m = modal;
+              var mProps = m.querySelector('.modal__content').getBoundingClientRect();
+              var transX, transY, scaleX, scaleY;
+              var xc = w.innerWidth / 2;
+              var yc = w.innerHeight / 2;
+              
+              // this class increases z-index value so the button goes overtop the other buttons
+              trig.classList.add('modal__trigger--active');
+              
+              // these values are used for scale the temporary div to the same size as the modal
+              scaleX = mProps.width / trigProps.width;
+              scaleY = mProps.height / trigProps.height;
+              
+              scaleX = scaleX.toFixed(3); // round to 3 decimal places
+              scaleY = scaleY.toFixed(3);
+              
+              
+              // these values are used to move the button to the center of the window
+              transX = Math.round(xc - trigProps.left - trigProps.width / 2);
+              transY = Math.round(yc - trigProps.top - trigProps.height / 2);
+              
+              // if the modal is aligned to the top then move the button to the center-y of the modal instead of the window
+              if (m.classList.contains('modal--align-top')) {
+                transY = Math.round(mProps.height / 2 + mProps.top - trigProps.top - trigProps.height / 2);
+              }
+              
+              
+              // translate button to center of screen
+              trig.style.transform = 'translate(' + transX + 'px, ' + transY + 'px)';
+              trig.style.webkitTransform = 'translate(' + transX + 'px, ' + transY + 'px)';
+              // expand temporary div to the same size as the modal
+              div.style.transform = 'scale(' + scaleX + ',' + scaleY + ')';
+              div.style.webkitTransform = 'scale(' + scaleX + ',' + scaleY + ')';
+              
+              
+              window.setTimeout(function() {
+                window.requestAnimationFrame(function() {
+                  open(m, div);
+                });
+              }, contentDelay);
+              
+              };
+              
+              var open = function(m, div) {
+              
+              if (!isOpen) {
+                // select the content inside the modal
+                var content = m.querySelector('.modal__content');
+                // reveal the modal
+                m.classList.add('modal--active');
+                // reveal the modal content
+                content.classList.add('modal__content--active');
+              
+                /**
+                 * when the modal content is finished transitioning, fadeout the temporary
+                 * expanding div so when the window resizes it isn't visible ( it doesn't
+                 * move with the window).
+                 */
+              
+                content.addEventListener('transitionend', hideDiv, false);
+              
+                isOpen = true;
+              }
+              
+              function hideDiv() {
+                // fadeout div so that it can't be seen when the window is resized
+                div.style.opacity = '0';
+                content.removeEventListener('transitionend', hideDiv, false);
+              }
+              };
+              
+              var close = function(event) {
+              
+              event.preventDefault();
+              event.stopImmediatePropagation();
+              
+              var target = event.target;
+              var div = document.getElementById('modal__temp');
+              
+              /**
+               * make sure the modal__bg or modal__close was clicked, we don't want to be able to click
+               * inside the modal and have it close.
+               */
+              
+              if (isOpen && target.classList.contains('modal__bg') || target.classList.contains('modal__close')) {
+              
+                // make the hidden div visible again and remove the transforms so it scales back to its original size
+                div.style.opacity = '1';
+                div.removeAttribute('style');
+              
+                /**
+                * iterate through the modals and modal contents and triggers to remove their active classes.
+                * remove the inline css from the trigger to move it back into its original position.
+                */
+              
+                for (var i = 0; i < len; i++) {
+                  modals[i].classList.remove('modal--active');
+                  content[i].classList.remove('modal__content--active');
+                  trigger[i].style.transform = 'none';
+                  trigger[i].style.webkitTransform = 'none';
+                  trigger[i].classList.remove('modal__trigger--active');
+                }
+              
+                // when the temporary div is opacity:1 again, we want to remove it from the dom
+                div.addEventListener('transitionend', removeDiv, false);
+              
+                isOpen = false;
+              
+              }
+              
+              function removeDiv() {
+                setTimeout(function() {
+                  window.requestAnimationFrame(function() {
+                    // remove the temp div from the dom with a slight delay so the animation looks good
+                    div.remove();
+                  });
+                }, contentDelay - 50);
+              }
+              
+              };
+              
+              var bindActions = function() {
+              for (var i = 0; i < len; i++) {
+                trigger[i].addEventListener('click', getId, false);
+                closers[i].addEventListener('click', close, false);
+                modalsbg[i].addEventListener('click', close, false);
+              }
+              };
+              
+              var init = function() {
+              bindActions();
+              };
+              
+              return {
+              init: init
+              };
+              
+              }());
+              
+              Modal.init();
+                </script>
+
+    
+
+
+</body>
+
+</html>

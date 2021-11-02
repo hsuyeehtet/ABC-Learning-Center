@@ -1,0 +1,372 @@
+
+<style>
+  .site-footer
+{
+    margin-top: 1cm;
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer
+{
+  color:#BBE1FA;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#BBE1FA;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #fff;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+      color: #cb2027;
+      background: #fff;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #3a5876;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: #3a5876;
+      background: #fff;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;  
+      background: #fff;
+}
+
+#photos {
+  opacity: .88;
+}
+
+#photos img {
+  width: 30%;
+  float: left;
+  display: block;
+  margin: 2px;
+}
+
+#photo-gallery{
+  list-style: none;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  max-width: 500px;
+
+}
+
+#overlay {
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#photos {
+  width: 100%;
+}
+
+#photo-gallery {
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+ * {
+	 box-sizing: border-box;
+	 font-weight: normal;
+}
+
+h1,h3,h5,h4{
+  font-family: 'Roboto Slab', serif;
+    margin-left: 1cm;
+    text-align: center;
+    margin-bottom: 2cm;
+}
+li{
+  color: white;
+}
+span{
+  color: #26272b;
+}
+.icon{
+  margin-left: 0.5cm;
+  margin-top: 0.3cm;
+  margin-bottom: 0.5cm;
+}
+
+</style>
+
+
+
+      <div class="container" >
+        <h1>Privacy Policy</h1>
+        
+      <p>
+        <h2>What informations We collect?</h2>  <br> 
+        Personal data or personal information is data that can be used to uniquely identify or contact a single person, such as your name, company, mailing address, phone number, and email address. We may ask you for personal data 
+        to provide a service or carry out a transaction you request after your agreement with the purpose of use.
+        Except as described below, personal data that you provide to us via our website will not be shared outside of Internet Business Japan Co., Ltd. and its affiliated companies without your consent. It may be necessary − by law, legal process, litigation, and/or requests from public 
+        and governmental authorities within or outside your country of residence − for us to disclose your personal information.
+      </p>
+
+      <p>
+      <h2>How do we use the personal information that you provide to us?</h2> <br>
+      We use a variety of security technologies and procedures to help protect the personal data you provide from unauthorized access, use, or disclosure.
+      We use cookies. Cookies are small files that websites save to your hard disk or to your browser's memory. This technology helps us better understand user behavior, and tells us which parts of our website people have visited. It will not include any information that can be used to personally identify you. Most Internet browsers automatically accept cookies, but you can usually modify your browser settings to decline cookies or to notify you when a cookie is being placed on your computer.
+      <br> <br>
+      Please
+      <a href="#page2" style="color:red;">contact us</a> for futher informations.
+      </p>
+ 
+      <p>
+  <h2>Sharing information with third parties</h2> <br>
+  
+  We collect access logs about all visitors to our websites, including your Internet Protocol (IP) address, your browser type, and the date and time you access the site. We do not link these data to your identity. We may use this information to improve our website.
+  Our website collects certain demographic and interest data via the Google Analytics interface that we use to deliver specialised content to our users. This data is not used to uniquely identify you.
+  <br> <br>
+   Please
+   <a href="#page2" style="color:red;">contact us</a> for futher informations.
+   </p>
+   <p>
+  </div>
+
+
+<script nonce="RWC6rAC2I95bEh0VybFqnw==">
+    //<![CDATA[
+          //function to fix height of iframe!
+          var calcHeight = function() {
+            var headerDimensions = $('.preview__header').height();
+            $('.full-screen-preview__frame').height($(window).height() - headerDimensions);
+          }
+    
+          $(document).ready(function() {
+            calcHeight();
+          });
+    
+          $(window).resize(function() {
+            calcHeight();
+          }).load(function() {
+            calcHeight();
+          });
+    
+    //]]>
+
+    $(document).ready(function() {
+
+$.get("http://ipinfo.io", function(response) {
+  var cor = response.loc.split(',');
+  var lat = cor[0];
+  var lon = cor[1];
+  var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=metric" + "&APPID=3695e5e886e4a1b016cf201000ec807e";
+
+
+function CToF(celcius) {
+celcius = celcius * 1.8 + 32
+return Math.round( celcius * 10) / 10;
+}
+
+});
+    </script>
+
+</body>
+</html>

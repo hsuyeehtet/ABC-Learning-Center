@@ -1,0 +1,173 @@
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/cr.png">
+
+    <title>Registration</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom styles for-->
+    <link href="style.css" rel="stylesheet">
+
+
+  <div class="bg-light">
+
+
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <center><h2><b><i> Student Registration Form<i></b></h2></center>
+       <hr>
+      </div>
+
+	  
+
+          <form class="needs-validation method">
+            
+              <div class="mb-3">
+                <label for="firstName"><h4>First Name</h4></label>
+                <div class="input-group">
+                <input type="text" maxlength="50" class="form-control" name='fname' id="fname" onkeypress="return chkAplha(event,'error')" onblur="chkblnk('fname','error')" required />
+               
+                </div>
+                <div class="col" id="error" style="color:red"></div>
+                
+              </div>
+              
+              
+              <div class="mb-3">
+                  <label for="LastName"><h4>Last Name</h4></label>
+                  <div class="input-group">
+                  <input type="text" maxlength="50" class="form-control"  name='lname' id="lname" onkeypress="return chkAplha(event,'error1')" onblur="chkblnk('lname','error1')" required />
+                </div>
+                  <div class="col" id="error1" style="color:red"></div>
+                 
+                </div>
+              
+            
+
+            <div class="mb-3">
+              <label for="email"><h4>Email</h4></label>
+              <div class="input-group">
+              <input type="email" class="form-control" maxlength="30" name='email' id="email" onblur="chkeid()"  required/>
+           
+            </div>
+              <div id="error2" style="color:red"></div>
+              
+            </div>
+
+
+
+            <div class="mb-3">
+              <label for="phone"><h4>Contact Number</h4></label>
+              <div class="input-group">
+              <input type="text" onkeypress="return isNumberKey(event);" class="form-control" name='phone' id="phone" onblur="chkblnk('phone','error3')"  required/>
+           
+            </div>
+              <div id="error3" style="color:red"></div>
+              
+            </div>
+
+            <div class="mb-3">
+              <label for="phone"><h4>Address</h4></label>
+              <div class="input-group">
+             
+              <textarea class="form-control" id="address" name="address" maxlength="255" onblur="chkblnk('address','error6')" rows="5" required></textarea>
+            </div>
+              <div id="error6" style="color:red"></div>
+              
+            </div>
+
+            <div class="mb-3">
+              <label for="phone"><h4>Password</h4></label>
+              <div class="input-group">
+              <input type="password" class="form-control" name='password' id="password" onblur="chkblnk('password','error7')"  required/>
+           
+            </div>
+              <div id="error7" style="color:red"></div>
+              
+            </div>
+
+            <div class="mb-3">
+              <label for="phone"><h4>Confirm Password</h4></label>
+              <div class="input-group">
+              <input type="password" class="form-control" name='cpassword' id="cpassword" onblur="chkblnk('cpassword','error8')"  required/>
+           
+            </div>
+              <div id="error8" style="color:red"></div>
+              
+            </div>
+
+            
+            <div class="mb-3">
+            <input type="hidden" name="submitted" value="1">
+              <input type="submit" class="btn btn-primary" name="SubmitButton" id="submit" value="Submit" onClick="ValidateForm(this.form)">
+              <input class="btn btn-primary " type="button" value="Clear" onClick="document.location.reload(true)">
+                
+              </div> <br>
+
+
+            
+          </form>
+  </div>
+		
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    
+    <!--Custom Javascript -->
+    <script src="jss.js"></script>
+
+    <script>
+ 
+  
+
+ $(document).ready(function() {
+      $("#submit").click(function(){
+        var fname=$('#fname').val();
+        var lname=$('#lname').val();
+        var email=$('#email').val();
+        var phone=$('#phone').val();
+        var password=$('#password').val();
+        var conpassword=$('#conpassword').val();
+
+        var dataString = 'fname1=' + fname + '&lname1=' + lname + '&email1=' + email + '&phone1=' + phone + '&address1=' + address +'&password1=' + password + '&cpassword1=' + cpassword;
+
+        if($('#password').val() != $('#cpassword').val()) 
+        {
+          alert("Password does not match");
+        }
+        else if(fname=='' || lname=='' || email=='' || phone=='' || address=='' || password=='' || conpassword=='')
+        { 
+
+        } 
+
+        else
+        {
+          $.ajax(
+          {
+            type:"POST",
+            url:"register.php",
+            data:dataString,
+            cache:false,
+            success: function (result) {
+
+            }
+          });
+          window.location.replace('thankyou.html');
+        }
+        return false;
+      });
+    });
+
+    </script>
+

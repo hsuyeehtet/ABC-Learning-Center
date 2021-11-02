@@ -1,0 +1,517 @@
+
+
+    <style>
+        body {
+  width: 100%;
+  height: 100%;
+        }
+
+
+h1, h2, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #343e51;
+}
+h2 {
+
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.h1, .h2, .h4, .h5, .h6, h1, h2, h4, h5, h6 {
+    margin-bottom: .5rem;
+}
+
+h2 {
+
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 3cm;
+    margin-inline-end: 0px;
+}
+h1,h3,h5,h4{
+  font-family: 'Roboto Slab', serif;
+    margin-left: 1cm;
+}
+
+p{
+  font-family: 'Roboto Slab', serif;
+    position: relative;
+}
+.card{
+    border-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+}
+.col-sm-6{
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+.site-footer
+{
+    margin-top: 1cm;
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer
+{
+  color:#BBE1FA;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#BBE1FA;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #fff;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+      color: #cb2027;
+      background: #fff;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #3a5876;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: #3a5876;
+      background: #fff;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;  
+      background: #fff;
+}
+
+#photos {
+  opacity: .88;
+}
+
+#photos img {
+  width: 30%;
+  float: left;
+  display: block;
+  margin: 2px;
+}
+
+#photo-gallery{
+  list-style: none;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  max-width: 500px;
+
+}
+
+#overlay {
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#photos {
+  width: 100%;
+}
+
+#photo-gallery {
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+ * {
+	 box-sizing: border-box;
+	 font-weight: normal;
+}
+
+ h1 {
+	 font-size: 2.2em;
+}
+ .flip {
+     position: relative;
+}
+ .flip > .front, .flip > .back {
+	 display: block;
+	 transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	 transition-duration: 0.5s;
+	 transition-property: transform, opacity;
+}
+ .flip > .front {
+	 transform: rotateY(0deg);
+}
+ .flip > .back {
+	 position: absolute;
+	 opacity: 0;
+	 top: 0px;
+	 left: 0px;
+	 width: 100%;
+	 height: 100%;
+	 transform: rotateY(-180deg);
+}
+ .flip:hover > .front {
+	 transform: rotateY(180deg);
+}
+ .flip:hover > .back {
+	 opacity: 1;
+	 transform: rotateY(0deg);
+}
+ .flip.flip-vertical > .back {
+	 transform: rotateX(-180deg);
+}
+ .flip.flip-vertical:hover > .front {
+	 transform: rotateX(180deg);
+}
+ .flip.flip-vertical:hover > .back {
+	 transform: rotateX(0deg);
+}
+ .flip {
+	 position: relative;
+	 display: inline-block;
+	 margin-right: 2px;
+	 margin-bottom: 1em;
+	 width: 400px;
+}
+ .flip > .front, .flip > .back {
+	 display: block;
+	 color: white;
+	 width: inherit;
+	 background-size: cover !important;
+	 background-position: center !important;
+	 height: 220px;
+	 padding: 1em 2em;
+	 background: #313131;
+	 border-radius: 10px;
+}
+ .flip > .front p, .flip > .back p {
+	 font-size: 0.9125rem;
+	 line-height: 160%;
+	 color: #999;
+}
+ .text-shadow {
+	 text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+    margin-bottom: 0.5cm;
+    }
+ 
+
+
+    </style>
+
+
+            <h2 class="text-center">About Us</h2>
+ 
+
+        <div class="card mb-3">
+            <h3>Our Story</h3>
+            
+            <p>ABC Learning Center has trained over 25,000 graduates all over the world. From those who came looking to start or change their career, to establish a business, begin freelancing,
+                 or earn a certificate - here are a few success stories from the  ABC Learning Center India branch.</p>
+            <img src="image.jpg" height="456" width="500" class="card-img-top" alt="...">
+            <div class="card-body">
+            
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Who We Are</h5>
+                  <p class="card-text">
+                    <i><b>ABC</b></i> learning center's courses are designed by experienced Web Professionals who are at the forefront of their field. The material is then edited, 
+                    tested and revised to ensure that it captures your interest and is easy to pick up and learn.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Our story</h5>
+                  <p class="card-text"><i><b>ABC</b></i> learning center has trained over 25,000 graduates all over the world. From those who came looking to start or change their career, to establish a business,
+                       begin freelancing, or earn a certificate - here are a few success stories from the ABC Learning Center  India branch.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- horizontal -->
+
+<h4>Recommended Courses from ABC Learning Center </h4>
+<div class="container-fluid text-center mt-5">
+<div class="flip">
+    <div class="front" style="background-image: url(https://images7.alphacoders.com/679/thumb-1920-679140.png)">
+
+    </div>
+    <div class="back">
+       <h2>Python</h2>
+       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+    </div>
+</div>
+<div class="flip">
+    <div class="front" style="background-image: url(https://images7.alphacoders.com/486/thumb-350-486291.jpg)">
+
+    </div>
+    <div class="back">
+       <h2>C++</h2>
+       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+    </div>
+</div>
+<div class="flip">
+    <div class="front" style="background-image: url(https://wallpapercave.com/wp/wp1828904.png)">
+
+    </div>
+    <div class="back">
+       <h2>Java</h2>
+       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+    </div>
+</div>
+</div>
+
+
+        <script>
+            
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
+
+//An image to overlay
+$overlay.append($image);
+
+//Add overlay
+$("body").append($overlay);
+
+  //click the image and a scaled version of the full size image will appear
+  $("#photo-gallery a").click( function(event) {
+    event.preventDefault();
+    var imageLocation = $(this).attr("href");
+
+    //update overlay with the image linked in the link
+    $image.attr("src", imageLocation);
+
+    //show the overlay
+    $overlay.show();
+  } );
+
+  $("#overlay").click(function() {
+    $( "#overlay" ).hide();
+  });
+
+  
+        </script>
+
+</body>
+
+</html>

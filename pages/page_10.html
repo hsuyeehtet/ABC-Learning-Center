@@ -1,0 +1,424 @@
+
+<style>
+  .site-footer
+{
+    margin-top: 1cm;
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer
+{
+  color:#BBE1FA;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#BBE1FA;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #fff;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+      color: #cb2027;
+      background: #fff;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #3a5876;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: #3a5876;
+      background: #fff;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;  
+      background: #fff;
+}
+
+#photos {
+  opacity: .88;
+}
+
+#photos img {
+  width: 30%;
+  float: left;
+  display: block;
+  margin: 2px;
+}
+
+#photo-gallery{
+  list-style: none;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  max-width: 500px;
+
+}
+
+#overlay {
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#photos {
+  width: 100%;
+}
+
+#photo-gallery {
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+ * {
+	 box-sizing: border-box;
+	 font-weight: normal;
+}
+
+h1,h3,h5,h4{
+    font-family: 'Forte', serif;
+    margin-left: 1cm;
+}
+li{
+  color: white;
+}
+span{
+  color: #26272b;
+}
+.icon{
+  margin-left: 0.5cm;
+  margin-top: 0.3cm;
+  margin-bottom: 0.5cm;
+}
+
+</style>
+
+
+      <h1 style="text-align: center; margin-bottom: 2cm;">Sitemap</h1>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+
+
+            <ul>
+              <br>
+              <li><span class="glyphicon glyphicon-play-circle"> <a href="#page1">Home</a></i> </span><li><br>
+
+              
+            
+
+              <li><span class="glyphicon glyphicon-play-circle"> <a href="#page1">Courses Offering</a></i> </span></li>
+              <div class="icon">
+                <li><span class="glyphicon glyphicon-chevron-right"><a href="#page4">Course 1</a></i> </span></li><br>
+                <li><span class="glyphicon glyphicon-chevron-right"><a href="#page5">Course 2</a></i> </span></li><br>
+                <li><span class="glyphicon glyphicon-chevron-right"><a href="#page6">Course 3</a></i> </span></li><br>
+                <li><span class="glyphicon glyphicon-chevron-right"><a href="#page7">Course 4</a></i> </span></li>
+              </div>
+            </ul>
+
+          </div>
+
+          <div class="col-sm-6">
+
+            <ul>
+              <br>
+              <li><span class="glyphicon glyphicon-play-circle"> <a href="">Student Experience</a></i> </span><li><br>
+              <li><span class="glyphicon glyphicon-play-circle"> <a href="#">Success Stories</a></i> </span></li><br>
+              <li><span class="glyphicon glyphicon-play-circle"> <a href="#page3">About Us</a></i> </span></li><br>
+              <li><span class="glyphicon glyphicon-play-circle"> <a href="#page2">Contact</a></i> </span></li><br>
+              <li><span class="glyphicon glyphicon-play-circle"> <a href="#">Term & conditions</a></i> </span></li><br>
+              <li><span class="glyphicon glyphicon-play-circle"> <a href="#page9">Privacy & Policy </a></i> </span></li>
+              </div>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      
+
+
+
+<script nonce="RWC6rAC2I95bEh0VybFqnw==">
+    //<![CDATA[
+          //function to fix height of iframe!
+          var calcHeight = function() {
+            var headerDimensions = $('.preview__header').height();
+            $('.full-screen-preview__frame').height($(window).height() - headerDimensions);
+          }
+    
+          $(document).ready(function() {
+            calcHeight();
+          });
+    
+          $(window).resize(function() {
+            calcHeight();
+          }).load(function() {
+            calcHeight();
+          });
+    
+    //]]>
+
+    $(document).ready(function() {
+
+$.get("http://ipinfo.io", function(response) {
+  var cor = response.loc.split(',');
+  var lat = cor[0];
+  var lon = cor[1];
+  var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=metric" + "&APPID=3695e5e886e4a1b016cf201000ec807e";
+
+  $.getJSON(weatherUrl, function(result) {
+    $("#temp").text(Math.round( result.main.temp * 10) / 10 + " C");
+    $('#weathericon').prepend('<img src="http://openweathermap.org/img/w/' + result.weather[0].icon + '.png" alt="weather icon class="img-responsive" />');
+
+    switch (result.weather[0].main) {
+      case 'Clear':
+        $("body").css("background-image", 'url("http://www.dream-wallpaper.com/free-wallpaper/nature-wallpaper/clear-water-and-blue-sky-2-wallpaper/1920x1200/free-wallpaper-15.jpg")');
+        break;
+      case 'Clouds':
+        $("body").css("background-image", 'url("http://wallpaper-download.net/wallpapers/random-wallpapers-clouds-background-wallpaper-34665.jpg")');
+        break;
+      case 'Rain':
+        $("body").css("background-image",  'url("http://4hdwallpapers.com/wp-content/uploads/2013/04/Rain-Background-1024x640.jpg")');
+        break;
+      case 'Snow': 
+         $("body").css("background-image",  'url("http://7-themes.com/data_images/out/53/6951192-snow-background-1658.jpg")');
+        break;
+      case 'Extreme':
+        $("body").css("background-image",  'url("http://images.fanpop.com/images/image_uploads/severe-weather-weather-250420_1024_768.jpg")');
+        break;
+      case 'Mist':
+        $("body").css("background-image",  'url("http://wallpaperswell.com/wallpapers/2013/08/Beautiful-Early-Morning-Mist.jpg")');
+        break;
+      default:
+        $("body").css("background-image",  'url("http://www.wallpapers9hd.com/wp-content/uploads/2015/05/hd_nature_background_wallpapers_5.jpg")');
+    }
+    
+    $("#toggle").click(function(){
+  $('#temp').toggleClass('fahrenheit');
+  if($('#temp').is(".fahrenheit")){
+    $('#temp').text(CToF(result.main.temp) + " F");
+  }
+  else{
+    $('#temp').text(Math.round( result.main.temp * 10) / 10 + " C");
+  }
+});
+    
+  });
+  
+
+}, "jsonp");
+
+function CToF(celcius) {
+celcius = celcius * 1.8 + 32
+return Math.round( celcius * 10) / 10;
+}
+
+});
+    </script>
+
+</body>
+</html>
